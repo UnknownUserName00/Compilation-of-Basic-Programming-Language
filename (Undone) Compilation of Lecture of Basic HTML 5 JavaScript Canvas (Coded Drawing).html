@@ -1,0 +1,508 @@
+<! DOCTYPE html>
+<head>
+    <title>Basic HTML 5 JavaScript Canvas (Coded Drawing)</title>
+
+    <style>
+        hr {
+            border: black solid 2px;
+            width: 100%;
+        }
+
+        #summary {
+            border: black solid 2px;
+        }
+
+        body {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<h1 align = "center">Welcome to Basic HTML 5 JavaScript Canvas (Coded Drawing)</h1>
+
+<pre id = "summary">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;&lt;/title&gt;
+
+&lt;script&gt;
+window.onload=(function(){
+    var canvas=document.getElementById("canvas1");
+    var ctx=canvas.getContext("2d");
+
+    // drawn using normal stroke with border color and color fill
+    ctx.beginPath();
+    ctx.moveTo(##,##);
+    ctx.lineTo(##,##);
+    ctx.lineTo(##,##);
+    ctx.lineTo(##,##);
+    ctx.lineWidth=##;
+    ctx.stroke();
+    ctx.fillStyle='$$';
+    ctx.fill();
+
+    // drawn using quadratic curve
+    var startX=##;
+    var startY=##;
+    var controlX=##;
+    var controlY=##;
+    var endX=##;
+    var endY=##;
+    ctx.beginPath();
+    ctx.moveTo(startX,startY);
+    ctx.quadraticCurveTo(controlX,controlY,endX,endY);
+    ctx.stroke();
+
+    // drawn using cubic bezier curve
+    var startX=##;
+    var startY=##;
+    var controlX1=##;
+    var controlY1=##;
+    var controlX2=##;
+    var controlY2=##;
+    var endX=##;
+    var endY=##;
+    ctx.beginPath();
+    ctx.moveTo(startX,startY);
+    ctx.bezierCurveTo(controlX1,controlY1,controlX2,controlY2,endX,endY);
+    ctx.stroke();
+
+    // drawn using arcTo command displaying circular arc
+    var pointX0=##;
+    var pointY0=##;
+    var pointX1=##;
+    var pointY1=##;
+    var pointX2=##;
+    var pointY2=##;
+    var radius=##;
+    ctx.beginPath();
+    ctx.moveTo(pointX0,pointY0);
+    ctx.arcTo(pointX1, pointY1, pointX2, pointY2, radius);
+    ctx.stroke();
+
+    // drawn using arc command displaying partial circle
+    var centerX=##;
+    var centerY=##;
+    var radius=##;
+    var startingRadianAngle=Math.PI*##*.##;
+    var endingRadianAngle=Math.PI*##*.##;
+    ctx.beginPath();
+    ctx.arc(centerX, centerY, radius, startingRadianAngle, endingRadianAngle);
+    ctx.stroke();
+
+    // drawn using normal stroke with different style of end stroke
+    ctx.lineWidth=##;
+    ctx.lineCap='butt'; 
+    drawLine(##,##,##,##);
+    ctx.lineCap='round'; 
+    drawLine(##,##,##,##);
+    ctx.lineCap='square'; 
+    drawLine(##,##,##,##);
+    // utility function to draw a line
+    function drawLine(startX,startY,endX,endY){
+        ctx.beginPath();
+        ctx.moveTo(startX,startY);
+        ctx.lineTo(endX,endY);
+        ctx.stroke();
+    }
+    // for displaying rulers
+    ctx.lineWidth=##;
+    ctx.strokeStyle='$$';
+    drawLine(##,##,##,##);
+    drawLine(##,##,##,##);
+
+    // drawn using normal stroke with different style of join stroke
+    ctx.lineWidth=##;
+    ctx.lineJoin='miter';
+    drawPolyline(##,##);
+    ctx.lineJoin='round';
+    drawPolyline(##,##);
+    ctx.lineJoin='bevel';
+    drawPolyline(##,##);
+    // utility to draw polyline
+    function drawPolyline(x,y){
+        ctx.beginPath();
+        ctx.moveTo(x,y);
+        ctx.lineTo(x+##,y+##);
+        ctx.lineTo(x+##,y);
+        ctx.lineTo(x+##,y+##);
+        ctxF.stroke();
+    }
+
+    // drawn using different style of shadow
+    // shadowed stroke
+    ctx.shadowColor='$$';
+    ctx.shadowBlur=##;
+    ctx.strokeStyle='$$';
+    ctx.strokeRect(##,##,##,##);
+    // darken the shadow by stroking a second time
+    ctx.strokeRect(##,##,##,##);
+    // shadowed fill
+    ctx.shadowColor='$$';
+    ctx.shadowBlur=##;
+    ctx.fillStyle='$$';
+    ctx.fillRect(##,##,##,##);
+    // darken the shadow by stroking a second time
+    ctx.fillRect(##,##,##,##);
+    // the shadow offset rightward and downward
+    ctx.shadowColor='$$';
+    ctx.shadowBlur=##;
+    ctx.shadowOffsetX=##;
+    ctx.shadowOffsetY=##;
+    ctx.fillStyle='$$';
+    ctx.fillRect(##,##,##,##);
+    // a wider blur (==extends further from the path)
+    ctx.shadowColor='$$';
+    ctx.shadowBlur=##;
+    ctx.fillStyle='$$';
+    ctx.fillRect(##,##,##,##);
+    // always clean up! Turn off shadowing
+    ctx.shadowColor='rgba(##,##,##,##)';
+
+    // drawn using seting or reseting transform point of origin
+    var c = document.getElementById("myCanvas");
+    c.height = 150;
+    c.width = 300;
+    var ctx = c.getContext("2d");
+    ctx.fillRect(10, 10, 100, 50);
+    ctx.translate(70, 70); // sets origin to other coordinates
+    ctx.fillRect(10, 10, 100, 50);
+    // ctx.setTransform(horizontalScaling, horizontalSkewing, verticalSkewing, verticalScaling, horizontalMoving, verticalMoving);
+    scaleX = 1;
+    skewX = 0;
+    skewY = 0;
+    scaleY = 1;
+    moveX = 140;
+    moveY = 0;
+    ctx.setTransform(scaleX, skewX, skewY, scaleY, moveX, moveY); // sets or resets origin to other coordinates
+    ctx.fillRect(10, 10, 100, 50);
+
+    // rotate
+    function degreesRotate(angle) {
+        ctx.rotate(angle * (Math.PI / 180));
+    }
+    degreesRotate(##);
+    ctx.beginPath();
+    ctx.moveTo(##,##);
+    ctx.lineTo(##,##);
+    ctx.lineWidth=##;
+    ctx.stroke();
+    ctx.fillStyle='$$';
+    ctx.fill();
+
+    // move
+    ctx.setTransform(scaleX, skewX, skewY, scaleY, moveX, moveY);
+    ctx.beginPath();
+    ctx.moveTo(##,##);
+    ctx.lineTo(##,##);
+    ctx.lineWidth=##;
+    ctx.stroke();
+    ctx.fillStyle='$$';
+    ctx.fill();
+
+    ctx.closePath();
+});
+
+// to Convert from Javascript Canvas to Picture
+download_img = function(el) {
+    var image2 = canvas.toDataURL("image/png");
+    el.href = image2;
+&lt;/script&gt;
+
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;canvas id="canvas1" width="##" height="##"&gt;&lt;/canvas&gt;
+
+    &lt;!-- to Convert from Javascript Canvas to Picture --&gt;
+    &lt;img src = "myImage.png"/&gt;
+    &lt;a id="download" download="myImage.png" href="" onclick="download_img(this);"&gt;&lt;button&gt;Download to myImage.png&lt;/button&gt;&lt;/a&gt;
+
+    Source: goalkicker.com
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+
+
+
+<hr/>
+
+
+
+
+<style>
+body{ background-color:white; }
+#canvas, #canvasA, #canvasB, #canvasC, #canvasD, #canvasE, #canvasF, #canvasG {
+border:1px solid red;
+}
+
+#canvasArc, #myCanvas {
+border:1px solid red;
+}
+</style>
+<pre>
+Compiled Demo:
+</pre>
+<canvas id="canvas" width=100 height=100></canvas>
+<canvas id="canvasA" width=200 height=150></canvas>
+<canvas id="canvasB" width=200 height=150></canvas>
+<canvas id="canvasC" width=200 height=150></canvas>
+<canvas id="canvasD" width=200 height=150></canvas>
+<canvas id="canvasE" width=300 height=200></canvas>
+<canvas id="canvasF" width=300 height=200></canvas>
+<canvas id="canvasG" width=400 height=300></canvas>
+<canvas id="canvasArc" width=400 height=300></canvas>
+<canvas id="myCanvas" width="300" height="150">
+<script>
+window.onload=(function(){
+// canvas related variables
+var canvas=document.getElementById("canvas");
+var ctx=canvas.getContext("2d");
+ctx.beginPath();
+ctx.moveTo(50,30);
+ctx.lineTo(75,55);
+ctx.lineTo(25,55);
+ctx.lineTo(50,30);
+ctx.lineWidth=2;
+ctx.stroke();
+
+ctx.fillStyle='blue';
+ctx.fill();
+
+
+
+
+ // get a reference to the canvas element and it's context
+ var canvasA=document.getElementById("canvasA");
+ var ctxA=canvasA.getContext("2d");
+ // arguments
+ var startXa=25;
+ var startYa=70;
+ var controlXa=75;
+ var controlYa=25;
+ var endXa=125;
+ var endYa=70;
+ // A quadratic curve drawn using "moveTo" and "quadraticCurveTo" commands
+ ctxA.beginPath();
+ ctxA.moveTo(startXa,startYa);
+ ctxA.quadraticCurveTo(controlXa,controlYa,endXa,endYa);
+ ctxA.stroke();
+
+
+
+
+ var canvasB=document.getElementById("canvasB");
+ var ctxB=canvasB.getContext("2d");
+ // arguments
+ var startXb=25;
+ var startYb=50;
+ var controlX1b=75;
+ var controlY1b=10;
+ var controlX2b=75;
+ var controlY2b=90;
+ var endXb=125;
+ var endYb=50; 
+ 
+ // A cubic bezier curve drawn using "moveTo" and "bezierCurveTo" commands
+ ctxB.beginPath();
+ ctxB.moveTo(startXb,startYb);
+ ctxB.bezierCurveTo(controlX1b,controlY1b,controlX2b,controlY2b,endXb,endYb);
+ ctxB.stroke();
+
+
+
+
+ // get a reference to the canvas element and it's context
+ var canvasC=document.getElementById("canvasC");
+ var ctxC=canvasC.getContext("2d");
+ // arguments
+ var pointX0c=25;
+ var pointY0c=80;
+ var pointX1c=75;
+ var pointY1c=0;
+ var pointX2c=125;
+ var pointY2c=80;
+ var radiusC=25;
+ // A circular arc drawn using the "arcTo" command. The line is automatically drawn.
+ ctxC.beginPath();
+ ctxC.moveTo(pointX0c,pointY0c);
+ ctxC.arcTo(pointX1c, pointY1c, pointX2c, pointY2c, radiusC);
+ ctxC.stroke();
+
+
+
+
+ // get a reference to the canvas element and its context
+ var canvasD=document.getElementById("canvasD");
+ var ctxD=canvasD.getContext("2d");
+ // arguments
+ var centerXd=50;
+ var centerYd=50;
+ var radiusD=30;
+ var startingRadianAngleD=Math.PI*2*.35; // start at 90 degrees == centerY+radius
+ var endingRadianAngleD=Math.PI*2*.75; // end at 270 degrees (==PI*2*.75 in radians)
+ // A partial circle (i.e. arc) drawn using the "arc" command
+ ctxD.beginPath();
+ ctxD.arc(centerXd, centerYd, radiusD, startingRadianAngleD, endingRadianAngleD);
+ ctxD.stroke();
+
+
+
+
+ // canvas related variables
+ var canvasE=document.getElementById("canvasE");
+ var ctxE=canvasE.getContext("2d");
+ ctxE.lineWidth=15;
+ // lineCap default: butt
+ ctxE.lineCap='butt'; 
+ drawLine(50,40,200,40);
+ // lineCap: round
+ ctxE.lineCap='round'; 
+ drawLine(50,70,200,70);
+ // lineCap: square
+ ctxE.lineCap='square'; 
+ drawLine(50,100,200,100);
+ // utility function to draw a line
+ function drawLine(startXe,startYe,endXe,endYe){
+ ctxE.beginPath();
+ ctxE.moveTo(startXe,startYe);
+ ctxE.lineTo(endXe,endYe);
+ ctxE.stroke();
+ }
+ // For demo only,
+// Rulers to show which lineCaps extend beyond endpoints
+ ctxE.lineWidth=1;
+ ctxE.strokeStyle='red';
+ drawLine(50,20,50,120);
+ drawLine(200,20,200,120);
+
+
+
+
+ // canvas related variables
+ var canvasF=document.getElementById("canvasF");
+ var ctxF=canvasF.getContext("2d");
+ ctxF.lineWidth=15;
+ // lineJoin: miter (default)
+ ctxF.lineJoin='miter';
+ drawPolyline(50,30);
+ // lineJoin: round
+ ctxF.lineJoin='round';
+ drawPolyline(50,80);
+ // lineJoin: bevel
+ctxF.lineJoin='bevel';
+ drawPolyline(50,130);
+ // utility to draw polyline
+ function drawPolyline(xF,yF){
+ ctxF.beginPath();
+ ctxF.moveTo(xF,yF);
+ ctxF.lineTo(xF+30,yF+30);
+ ctxF.lineTo(xF+60,yF);
+ ctxF.lineTo(xF+90,yF+30);
+ ctxF.stroke();
+ }
+
+
+
+
+ // canvas related variables
+ var canvasG=document.getElementById("canvasG");
+ var ctxG=canvasG.getContext("2d");
+ // shadowed stroke
+ ctxG.shadowColor='black';
+ ctxG.shadowBlur=6;
+ ctxG.strokeStyle='red';
+ ctxG.strokeRect(50,50,100,50);
+ // darken the shadow by stroking a second time
+ ctxG.strokeRect(50,50,100,50);
+ // shadowed fill
+ ctxG.shadowColor='black';
+ ctxG.shadowBlur=10;
+ ctxG.fillStyle='red';
+ ctxG.fillRect(225,50,100,50);
+ // darken the shadow by stroking a second time
+ ctxG.fillRect(225,50,100,50);
+// the shadow offset rightward and downward
+ ctxG.shadowColor='black';
+ ctxG.shadowBlur=10;
+ ctxG.shadowOffsetX=5;
+ ctxG.shadowOffsetY=5;
+ ctxG.fillStyle='red';
+ ctxG.fillRect(50,175,100,50);
+ // a wider blur (==extends further from the path)
+ ctxG.shadowColor='black';
+ ctxG.shadowBlur=35;
+ ctxG.fillStyle='red';
+ ctxG.fillRect(225,175,100,50);
+ // always clean up! Turn off shadowing
+ ctxG.shadowColor='rgba(0,0,0,0)';
+
+
+
+
+var canvasArc=document.getElementById("canvasArc");
+var ctxArc=canvasArc.getContext("2d");
+ctxArc.beginPath();
+ctxArc.moveTo(0, 0);
+ctxArc.lineTo(0, 50);
+ctxArc.lineTo(50, 50);
+ctxArc.lineTo(50, 0);
+ctxArc.lineTo(20, 0);
+
+ctxArc.moveTo(0, 100);
+ctxArc.lineTo(50, 100);
+ctxArc.lineTo(50, 150);
+ctxArc.lineTo(0, 150);
+ctxArc.lineTo(0, 120);
+
+ctxArc.moveTo(100, 50);
+ctxArc.lineTo(100, 0);
+ctxArc.lineTo(150, 0);
+ctxArc.lineTo(150, 50);
+ctxArc.lineTo(120, 50);
+
+ctxArc.moveTo(150, 150);
+ctxArc.lineTo(100, 150);
+ctxArc.lineTo(100, 100);
+ctxArc.lineTo(150, 100);
+ctxArc.lineTo(150, 130);
+/*
+    pointX2 = 80;
+    pointY2 = 65;
+    pointX1 = 60;
+    pointY1 = 50;
+    radius = 50;
+    ctxArc.arcTo(pointX1, pointY1, pointX2, pointY2, radius);
+*/
+ctxArc.strokeStyle = "black";
+ctxArc.lineWidth = 2;
+ctxArc.fillStyle='transparent';
+ctxArc.fill();
+ctxArc.stroke();
+
+
+
+
+var c = document.getElementById("myCanvas");
+c.height = 150;
+c.width = 300;
+var ctx = c.getContext("2d");
+ctx.fillRect(10, 10, 100, 50);
+ctx.translate(70, 70); // sets origin to other coordinates
+ctx.fillRect(10, 10, 100, 50);
+
+// ctx.setTransform(horizontalScaling, horizontalSkewing, verticalSkewing, verticalScaling, horizontalMoving, verticalMoving);
+scaleX = 1;
+skewX = 0;
+skewY = 0;
+scaleY = 1;
+moveX = 140;
+moveY = 0;
+ctx.setTransform(scaleX, skewX, skewY, scaleY, moveX, moveY); // sets or resets origin to other coordinates
+ctx.fillRect(10, 10, 100, 50);
+}); // end window.onload
+</script>
+</body>
+</html>
