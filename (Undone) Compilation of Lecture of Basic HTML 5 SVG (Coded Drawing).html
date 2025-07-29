@@ -1,0 +1,2357 @@
+<! DOCTYPE html>
+<head>
+    <title>Basic HTML 5 SVG (Coded Drawing)</title>
+
+    <style>
+        #noWrap {
+            white-space: pre;
+        }
+
+        table, th, td {
+            border-style: solid;
+        }
+
+        body {
+            display: inline-block;
+        }
+
+        #unknown {
+            color: Red;
+            font-weight: bold;
+        }
+
+        text {
+            stroke: Blue;
+            // transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <h1 align = "center">Welcome to Basic HTML 5 SVG (Coded Drawing)</h1>
+<p align = "center">
+The main definition of <b><font color = "Chocolate" size = "5">SVG</font></b> is <b><font color = "Blue" size = "5">S</font>calar <font color = "Blue" size = "5">V</font>ector <font color = "Blue" size = "5">G</font>raphics</b>.
+</p>
+
+    <table border = "2" align = "center" id = "SVGDrawing">
+        <tr>
+            <th colspan = "7">for Container Tag<br/>
+&lt;Opened_HTML_Tag&gt;&lt;Closed_HTML_Tag/&gt;</th>
+        </tr>
+        <tr>
+            <th rowspan = "2">HTML Tag</th>
+            <th colspan = "2">for HTML</th>
+
+            <td rowspan = "61" id = "noWrap">  </td>
+            <th colspan = "3">for CSS</th>
+
+
+        </tr>
+        <tr>
+
+            <th>HTML Attribute</th>
+            <th>HTML Value</th>
+
+            <th>HTML Attribute</th>
+            <th>CSS Property</th>
+            <th>CSS Value</th>
+        </tr>
+        <tr align = "center" id = "noWrap">
+            <td rowspan = "3">canvas</td>
+            <td>height</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>width</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td></td>
+            <td></td>
+
+            <td>style</td>
+            <td>border</td>
+            <td id = "noWrap"><select>
+<option>border-width</option>
+</select> <select>
+<option>border-style</option>
+</select> <select>
+<option>border-color</option>
+</select></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+            <td>clipPath</td>
+            <td>id</td>
+            <td>CSS_U.ser_Defined_Id_Name</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+            <td rowspan = "4">g</td>
+            <td>fill</td>
+            <td><select>
+<option>none</option>
+<option>#RRGGBB</option>
+<option>#RGB</option>
+<option>Color Name</option>
+<option>transparent</option>
+<option>url(#CSS_User_Defined_Id_Name)</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>stroke</td>
+            <td><select>
+<option>#RRGGBB</option>
+<option>#RGB</option>
+<option>Color Name</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>id</td>
+            <td>CSS_User_Defined_Id_Name</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>transform</td>
+            <td>translate(width_x, height_y)    rotate(angle)    skewX(angle)    skewY(angle)    scale(x, y)    matrix(n, n, n, n, n, n)</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+            <td rowspan = "10">linearGradient</td>
+            <td>gradientTransform</td>
+            <td>rotate(##)</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>gradientUnits</td>
+            <td><select>
+<option>objectBoundingBox</option>
+<option>userSpaceOnUse</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>id</td>
+            <td>CSS_User_Defined_Id_Name</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>x1</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>x2</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>xlink:href</td>
+            <td>#URL</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>xmlns</td>
+            <td>URL</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>xmlns:xlink</td>
+            <td>URL</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>y1</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>y2</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+            <td>mask</td>
+            <td>id</td>
+            <td>CSS_User_Defined_Id_Name</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+            <td rowspan = "7">pattern</td>
+            <td>height</td>
+            <td><select>
+<option>##</option>
+<option>##.##</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>id</td>
+            <td>CSS_User_Defined_Id_Name</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>patternContentUnits</td>
+            <td><select>
+<option>userSpaceOnUse</option>
+<option>objectBoundingBox</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>patternUnits</td>
+            <td><select>
+<option>objectBoundingBox</option>
+<option>userSpaceOnUse</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>width</td>
+            <td><select>
+<option>##</option>
+<option>##.##</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>x</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>y</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+            <td rowspan = "9">radialGradient</td>
+            <td>cx</td>
+            <td>percentage</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>cy</td>
+            <td>percentage</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>fx</td>
+            <td>percentage</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>fy</td>
+            <td>percentage</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>gradientTransform</td>
+            <td>rotate(##)</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>gradientUnits</td>
+            <td><select>
+<option>objectBoundingBox</option>
+<option>userSpaceOnUse</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>id</td>
+            <td>CSS_User_Defined_Id_Name</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>r</td>
+            <td>percentage</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>spreadMethod</td>
+            <td><select>
+<option>pad</option>
+<option>reflect</option>
+<option>repeat</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+            <td rowspan = "6">svg</td>
+            <td>height</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>version</td>
+            <td>1.1</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>viewbox</td>
+            <td><select>
+<option>x1 y1 x2 y2</option>
+<option>## ## ## ##</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>width</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>xmlns</td>
+            <td>URL</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>xmlns:xlink</td>
+            <td>URL</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+            <td rowspan = "7">text</td>
+            <td>fill</td>
+            <td><select>
+<option>none</option>
+<option>#RRGGBB</option>
+<option>#RGB</option>
+<option>Color Name</option>
+<option>transparent</option>
+<option>url(#CSS_User_Defined_Id_Name)</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>font-family</td>
+            <td>Font Name</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>font-size</td>
+            <td>##pt</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>stroke</td>
+            <td></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>text-anchor</td>
+            <td><select>
+<option>start</option>
+<option>middle</option>
+<option>end</option>
+<option>inherit</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>x</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>y</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+            <td>tref</td>
+            <td>xlink:href</td>
+            <td>#URL</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+            <td rowspan = "9">tspan</td>
+            <td>dx</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>dy</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>fill</td>
+            <td><select>
+<option>none</option>
+<option>#RRGGBB</option>
+<option>#RGB</option>
+<option>Color Name</option>
+<option>transparent</option>
+<option>url(#CSS_User_Defined_Id_Name)</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>font-family</td>
+            <td>Font Name</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>font-weight</td>
+            <td>bold</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>rotate</td>
+            <td>##deg</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>textLength</td>
+            <td>##?</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>x</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>y</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+            <td>textPath</td>
+            <td>xlink:href</td>
+            <td>#URL</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+<!--
+        <tr align = "center" id = "noWrap">
+            <td></td>
+            <td></td>
+            <td></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+-->
+    </table><br/>
+<br/>
+    <table border = "2" align = "center">
+        <tr>
+            <th colspan = "7">for Empty Tag<br/>
+&lt;HTML_Tag/&gt;</th>
+        </tr>
+        <tr>
+            <th rowspan = "2">HTML Tag</th>
+            <th colspan = "2">for HTML</th>
+
+            <td rowspan = "67" id = "noWrap">  </td>
+            <th colspan = "3">for CSS</th>
+
+
+        </tr>
+        <tr>
+
+            <th>HTML Attribute</th>
+            <th>HTML Value</th>
+
+            <th>HTML Attribute</th>
+            <th>CSS Property</th>
+            <th>CSS Value</th>
+        </tr>
+        <tr align = "center" id = "noWrap">
+            <td rowspan = "9">circle</td>
+            <td>clipPath</td>
+            <td>url(#URL)</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>cx</td>
+            <td><select>
+<option>0</option>
+<option>&infin;</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>cy</td>
+            <td><select>
+<option>0</option>
+<option>&infin;</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>fill</td>
+            <td><select>
+<option>none</option>
+<option>#RRGGBB</option>
+<option>#RGB</option>
+<option>Color Name</option>
+<option>transparent</option>
+<option>url(#CSS_User_Defined_Id_Name)</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>fill-opacity</td>
+            <td><select>
+<option>0</option>
+<option>.5</option>
+<option>1</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>r</td>
+            <td><select>
+<option>1</option>
+<option>&infin;</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>stroke</td>
+            <td><select>
+<option>#RRGGBB</option>
+<option>#RGB</option>
+<option>Color Name</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>stroke-opacity</td>
+            <td><select>
+<option>0</option>
+<option>.5</option>
+<option>1</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>stroke-width</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+            <td rowspan = "7">ellipse</td>
+            <td>cx</td>
+            <td><select>
+<option>0</option>
+<option>&infin;</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>cy</td>
+            <td><select>
+<option>0</option>
+<option>&infin;</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>fill</td>
+            <td><select>
+<option>none</option>
+<option>#RRGGBB</option>
+<option>#RGB</option>
+<option>Color Name</option>
+<option>transparent</option>
+<option>url(#CSS_User_Defined_Id_Name)</option>
+</select></td>
+
+            <td>style</td>
+            <td>fill</td>
+            <td>url(#CSS_User_Defined_Id_Name)</td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>rx</td>
+            <td><select>
+<option>1</option>
+<option>&infin;</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>ry</td>
+            <td><select>
+<option>1</option>
+<option>&infin;</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>stroke</td>
+            <td><select>
+<option>#RRGGBB</option>
+<option>#RGB</option>
+<option>Color Name</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>stroke-width</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+            <td rowspan = "5">image</td>
+            <td>height</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>width</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>x</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>xlink:href</td>
+            <td>URL_File</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>y</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+            <td rowspan = "12">line</td>
+            <td>fill-rule</td>
+            <td id = "unknown">unknown</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>stroke</td>
+            <td><select>
+<option>#RRGGBB</option>
+<option>#RGB</option>
+<option>Color Name</option>
+</select></td>
+
+            <td rowspan = "2">style</td>
+            <td>stroke</td>
+            <td><select>
+<option>#RRGGBB</option>
+<option>#RGB</option>
+<option>Color Name</option>
+<option>transparent</option>
+</select></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>stroke-dasharray</td>
+            <td>distance_filled_area1, distance_unfilled_area1, distance_filled_area2, distance_unfilled_area2, ....distance_filled_areaF, distance_unfilled_areaF</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>stroke-dashoffset</td>
+            <td id = "unknown">unknown</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>stroke-linecap</td>
+            <td><select>
+<option>butt</option>
+<option>square</option>
+<option>round</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>stroke-linejoin</td>
+            <td><select>
+<option>miter</option>
+<option>round</option>
+<option>bevel</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>stroke-miterlimit</td>
+            <td id = "unknown">unknown</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>stroke-width</td>
+            <td>##</td>
+
+
+            <td id = "noWrap">stroke-width</td>
+            <td>##</td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>x1</td>
+            <td><select>
+<option>-4</option>
+<option>0</option>
+<option>&infin;</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>x2</td>
+            <td><select>
+<option>-4</option>
+<option>0</option>
+<option>&infin;</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>y1</td>
+            <td><select>
+<option>-4</option>
+<option>0</option>
+<option>&infin;</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>y2</td>
+            <td><select>
+<option>-4</option>
+<option>0</option>
+<option>&infin;</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center">
+            <td rowspan = "5">path</td>
+            <td>d</td>
+            <td>Line Commands:<br/>
+<select>
+<option>M x y</option>
+<option>M ## ##</option>
+<option>m dx dy</option>
+<option>m ##px ##px</option>
+</select> <select>
+<option>L x y</option>
+<option>l dx dy</option>
+</select> <select>
+<option>H x</option>
+<option>h dx</option>
+</select> <select>
+<option>V x</option>
+<option>v dx</option>
+</select> <select>
+<option>Z</option>
+<option>z</option>
+</select><br/>
+<br/>
+Curve Commands:<br/>
+<select>
+<option>M x y</option>
+<option>M ## ##</option>
+<option>m dx dy</option>
+<option>m ##px ##px</option>
+</select> <select>
+<option>C x1 y1, x2 y2, x3 y3</option>
+<option>c dx1 dy1, dx2 dy2, dx3 dy3</option>
+</select> <select>
+<option>S x1 y1, x2 y2</option>
+<option>s dx1 dy1, dx2 dy2</option>
+</select><br/>
+<select>
+<option>M x y</option>
+<option>M ## ##</option>
+<option>m dx dy</option>
+<option>m ##px ##px</option>
+</select> <select>
+<option>Q x1 y1, x2 y2</option>
+<option>q dx1 dy1, dx2 dy2</option>
+</select> <select>
+<option>T x y</option>
+<option>t dx dy</option>
+</select><br/>
+<br/>
+Arcs:<br/>
+<select>
+<option>M x y</option>
+<option>M ## ##</option>
+<option>m dx dy</option>
+<option>m ##px ##px</option>
+</select> <select>
+<option>L x y</option>
+<option>l dx dy</option>
+</select> <select>
+<option>A rx ry, x-axis_rotation, large-arc-flag, sweep-flag, x y</option>
+<option>a rx ry, x-axis_rotation, large-arc-flag, sweep-flag, dx dy</option>
+</select> <select>
+<option>L x y</option>
+<option>l dx dy</option>
+</select> <select>
+<option>A rx ry, x-axis_rotation, large-arc-flag, sweep-flag, x y</option>
+<option>a rx ry, x-axis_rotation, large-arc-flag, sweep-flag, dx dy</option>
+</select>....</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>fill</td>
+            <td><select>
+<option>none</option>
+<option>#RRGGBB</option>
+<option>#RGB</option>
+<option>Color Name</option>
+<option>transparent</option>
+<option>url(#CSS_User_Defined_Id_Name)</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>stroke</td>
+            <td><select>
+<option>#RRGGBB</option>
+<option>#RGB</option>
+<option>Color Name</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>stroke-width</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>transform</td>
+            <td>translate(width_x, height_y)    rotate(##)</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+            <td rowspan = "4">polygon</td>
+            <td>fill</td>
+            <td><select>
+<option>none</option>
+<option>#RRGGBB</option>
+<option>#RGB</option>
+<option>Color Name</option>
+<option>transparent</option>
+<option>url(#CSS_User_Defined_Id_Name)</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>points</td>
+            <td id = "noWrap">##, ##, ...., ##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>stroke</td>
+            <td><select>
+<option>#RRGGBB</option>
+<option>#RGB</option>
+<option>Color Name</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>stroke-width</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+            <td rowspan = "4">polyline</td>
+            <td>fill</td>
+            <td><select>
+<option>none</option>
+<option>#RRGGBB</option>
+<option>#RGB</option>
+<option>Color Name</option>
+<option>transparent</option>
+<option>url(#CSS_User_Defined_Id_Name)</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>points</td>
+            <td id = "noWrap">x1 y1, x2 y2, ....xN yN</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr align = "center" id = "noWrap">
+
+            <td>stroke</td>
+            <td><select>
+<option>#RRGGBB</option>
+<option>#RGB</option>
+<option>Color Name</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>stroke-width</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+            <td rowspan = "13">rect</td>
+            <td>fill</td>
+            <td><select>
+<option>none</option>
+<option>#RRGGBB</option>
+<option>#RGB</option>
+<option>Color Name</option>
+<option>transparent</option>
+<option>url(#CSS_User_Defined_Id_Name)</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>fill-opacity</td>
+            <td><select>
+<option>0</option>
+<option>.5</option>
+<option>1</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>height</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>opacity</td>
+            <td><select>
+<option>0</option>
+<option>.5</option>
+<option>1</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>rx</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>ry</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>stroke</td>
+            <td><select>
+<option>#RRGGBB</option>
+<option>#RGB</option>
+<option>Color Name</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>stroke-opacity</td>
+            <td><select>
+<option>0</option>
+<option>.5</option>
+<option>1</option>
+</select></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>stroke-width</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>transform</td>
+            <td>translate(width_x, height_y)    rotate(angle)    skewX(angle)    skewY(angle)    scale(x, y)    matrix(n, n, n, n, n, n)</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>width</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>x</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>y</td>
+            <td>##</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+            <td rowspan = "4">stop</td>
+            <td>class</td>
+            <td>CSS_User_Defined_Class_Name</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>offset</td>
+            <td>##%</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>stop-color</td>
+            <td>Color Name</td>
+
+            <td rowspan = "2">style</td>
+            <td>stop-color</td>
+            <td>ColorType(red, green, blue)</td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>stop-opacity</td>
+            <td><select>
+<option>0</option>
+<option>.5</option>
+<option>1</option>
+</select></td>
+
+
+            <td>stop-opacity</td>
+            <td><select>
+<option>0</option>
+<option>.5</option>
+<option>1</option>
+</select></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+            <td rowspan = "2">use</td>
+            <td>transform</td>
+            <td>translate(width_x, height_y)    rotate(##)</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align = "center" id = "noWrap">
+
+            <td>xlink:href</td>
+            <td>#URL</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+<!--
+        <tr align = "center" id = "noWrap">
+            <td></td>
+            <td></td>
+            <td></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+-->
+        <tr>
+            <td colspan = "7">Note:
+                <ul>
+                    <li>You can adjust the height and width of the &lt;svg&gt; HTML Tag if ever the height and width points of any shape reached the exceeded points that may cause your shape(s) displaying a small dot on your screen.</li><br/>
+                    <li>for &lt;path/&gt; HTML Tag:<br/>
+                        <table border = "2">
+                            <tr>
+                                <th>HTML Code(s)</th>
+                                <th>Definition</th>
+                                <th>Code Type</th>
+                            </tr>
+                            <tr align = "center">
+                                <td>path</td>
+                                <td align = "left">&rArr; To draw an arc.</td>
+                                <td>HTML Tag</td>
+                            </tr>
+                            <tr align = "center">
+                                <td>d</td>
+                                <td align = "left">&rArr; To <b>describe</b> the shape structure.</td>
+                                <td>HTML Attribute or Property</td>
+                            </tr>
+                            <tr align = "center">
+                                <td>M</td>
+                                <td align = "left">&rArr; "Move to" Command<br/>
+&rArr; Uppercase Letter "M" shows absolute coordinates.<br/>
+&rArr; Lowercase Letter "m" shows relative coordinates.<br/>
+&rArr; It is used to move the pen to a specific point. This command takes 2 parameters x and y and usually our path begins with this command. It basically defines starting point of our drawing.</td>
+                                <td>HTML Value</td>
+                            </tr>
+
+
+                            <tr>
+                                <td colspan = "3"><br/><br/></td>
+                            </tr>
+
+
+                            <tr>
+                                <th colspan = "3">Line Commands</th>
+                            </tr>
+                            <tr>
+                                <th>HTML Code(s)</th>
+                                <th>Definition</th>
+                                <th>Code Type</th>
+                            </tr>
+                            <tr align = "center">
+                                <td>L</td>
+                                <td align = "left">&rArr; "Line to" Command<br/>
+&rArr; Uppercase Letter "L" shows absolute coordinates.<br/>
+&rArr; Lowercase Letter "l" shows relative coordinates.<br/>
+&rArr; Draws a line from the current position to a new position.</td>
+                                <td rowspan = "4">HTML Value</td>
+                            </tr>
+                            <tr align = "center">
+                                <td>H</td>
+                                <td align = "left">&rArr; Uppercase Letter "H" shows absolute coordinates.<br/>
+&rArr; Lowercase Letter "h" shows relative coordinates.<br/>
+&rArr; Draws a Horizontal Line.</td>
+
+                            </tr>
+                            <tr align = "center">
+                                <td>V</td>
+                                <td align = "left">&rArr; Uppercase Letter "V" shows absolute coordinates.<br/>
+&rArr; Lowercase Letter "v" shows relative coordinates.<br/>
+&rArr; Draws a Vertical Line.</td>
+
+                            </tr>
+                            <tr align = "center">
+                                <td>Z</td>
+                                <td align = "left">&rArr; "Close Path" Command<br/>
+&rArr; Draws a straight line from the current position back to the first point of the path. It is often placed at the end of a path node, although not always. There is no difference between the uppercase and lowercase command.</td>
+
+                            </tr>
+
+
+                            <tr>
+                                <td colspan = "3"><br/><br/></td>
+                            </tr>
+
+
+                            <tr>
+                                <th colspan = "3">Curve Commands</th>
+                            </tr>
+                            <tr>
+                                <th>HTML Code(s)</th>
+                                <th>Definition</th>
+                                <th>Code Type</th>
+                            </tr>
+                            <tr align = "center">
+                                <td>C</td>
+                                <td align = "left">&rArr; Cubic Beziers<br/>
+&rArr; Uppercase Letter "C" shows absolute coordinates.<br/>
+&rArr; Lowercase Letter "c" shows relative coordinates.<br/>
+&rArr; The last set of coordinates (x3, y3) are where you want the line to end. The other two are control points. The control point for the start of your curve is (x1, y1), and (x2, y2) is the end point of your curve. The control points essentially describe the slope of your line starting at each point. The Bezier function then creates a smooth curve that transfers you from the slope you established at the beginning of your line, to the slope at the other end.</td>
+                                <td rowspan = "4">HTML Value</td>
+                            </tr>
+                            <tr align = "center">
+                                <td>S</td>
+                                <td align = "left">&rArr; Shortcut version of Cubic Beziers.<br/>
+&rArr; Uppercase Letter "S" shows absolute coordinates.<br/>
+&rArr; Lowercase Letter "s" shows relative coordinates.<br/>
+&rArr; S produces the same type of curve as earlier, but if it follows another S command or a C command, the first control point is assumed to be a reflection of the one used previously. If the S command doesn't follow another S or C command, then the current position of the cursor is used as the first control point.</td>
+
+                            </tr>
+                            <tr align = "center">
+                                <td>Q</td>
+                                <td align = "left">&rArr; Quadratic Curve<br/>
+&rArr; Uppercase Letter "Q" shows absolute coordinates.<br/>
+&rArr; Lowercase Letter "q" shows relative coordinates.<br/>
+&rArr; It is actually a simpler curve than the cubic one. It requires one control point which determines the slope of the curve at both the start point and the end point. It takes two arguments: the control point and the end point of the curve.</td>
+
+                            </tr>
+                            <tr align = "center">
+                                <td>T</td>
+                                <td align = "left">&rArr; Uppercase Letter "T" shows absolute coordinates.<br/>
+&rArr; Lowercase Letter "t" shows relative coordinates.<br/>
+&rArr; Shortcut version of Cubic Beziers for stringing together multiple quadratic Beziers.<br/>
+<br/>
+Note: This only works if the previous command was a Q or a T command. If it is not, then the control point is assumed to be the same as the previous point, and you'll only draw lines.</td>
+
+                            </tr>
+
+
+                            <tr>
+                                <td colspan = "3"><br/><br/></td>
+                            </tr>
+
+
+                            <tr>
+                                <th colspan = "3">Arcs</th>
+                            </tr>
+                            <tr>
+                                <th>HTML Code(s)</th>
+                                <th>Definition</th>
+                                <th>Code Type</th>
+                            </tr>
+                            <tr align = "center">
+                                <td>A</td>
+                                <td align = "left">&rArr; Arc<br/>
+&rArr; Uppercase Letter "A" shows absolute coordinates.<br/>
+&rArr; Lowercase Letter "a" shows relative coordinates.<br/>
+&rArr; It is used to draw curves and arcs. This commands takes 7 parameters to draw an arc / curve.</td>
+                                <td>HTML Value</td>
+                            </tr>
+<!--
+                            <tr align = "center">
+                                <td></td>
+                                <td align = "left">&rArr;</td>
+                                <td></td>
+                            </tr>
+-->
+                        </table>
+                    </li><br/>
+                    <li>for &lt;line/&gt; HTML Tag:<br/>
+                        <table border = "2" align = "center">
+                            <tr>
+                                <th>HTML Code(s)</th>
+                                <th>Definition</th>
+                                <th>Code Type</th>
+                            </tr>
+                            <tr align = "center">
+                                <td id = "noWrap">stroke-linecap</td>
+                                <td align = "left">
+                                    <ul>
+                                        <li><b>butt</b> closes the line off with a straight edge that's normal (at 90 degrees) to the direction of the stroke and crosses its end.</li><br/>
+                                        <li><b>square</b> has essentially the same appearance, but stretches the stroke slightly beyond the actual path. The distance that the stroke goes beyond the path is half the <b>stroke-width</b>.</li><br/>
+                                        <li><b>round</b> produces a rounded effect on the end of the stroke. The radius of this curve is also controlled by the <b>stroke-width</b>.</li>
+                                    </ul>
+                                </td>
+                                <td>HTML Attribute</td>
+                            </tr>
+                            <tr align = "center">
+                                <td id = "noWrap">stroke-linejoin</td>
+                                <td align = "left">
+                                    <ul>
+                                        <li><b>miter</b> extends the line slightly beyond its normal width to create a square corner where only one angle is used.</li><br/>
+                                        <li><b>round</b> creates a rounded line segment.</li><br/>
+                                        <li><b>bevel</b> creates a new angle to aid in the transition between the two segments.</li>
+                                    </ul>
+                                </td>
+                                <td></td>
+                            </tr>
+<!--
+                            <tr align = "center">
+                                <td></td>
+                                <td align = "left">&rArr;</td>
+                                <td></td>
+                            </tr>
+-->
+                        </table>
+                    </li><br/>
+                    <li>for &lt;use/&gt; HTML Tag:<br/>
+You can use the &lt;use/&gt; HTML Tag repeatedly for &lt;g&gt; HTML Tag and its sub HTML Tag by using <b><i>xlink:href</i></b> and <b><i>transform</i></b> HTML Attribute or Property for &lt;use/&gt;.</li><br/>
+                    <li>for Compiled Definition of HTML Attributes or Properties for &lt;svg&gt; HTML Tag.<br/>
+                        <table border = "2" align = "center">
+                            <tr>
+                                <th>HTML Tag</th>
+                                <th>HTML <select>
+<option>Attribute</option>
+<option>Property</option>
+</select></th>
+                                <th>HTML <select>
+<option>Attribute</option>
+<option>Property</option>
+</select> Definition</th>
+                            </tr>
+                            <tr align = "center">
+                                <td rowspan = "2">canvas</td>
+                                <td id = "noWrap">x</td>
+                                <td align = "left" rowspan = "2">&rArr; Determine where in the viewport the text will appear.</td>
+                            </tr>
+                            <tr align = "center">
+
+                                <td id = "noWrap">y</td>
+
+                            </tr>
+                            <tr align = "center">
+
+                                <td id = "noWrap">text-anchor</td>
+                                <td align = "left">&rArr;</td>
+                            </tr>
+                            <tr align = "center">
+                                <td>circle</td>
+                                <td id = "noWrap"></td>
+                                <td align = "left">&rArr;</td>
+                            </tr>
+                            <tr align = "center">
+                                <td>clipPath</td>
+                                <td id = "noWrap"></td>
+                                <td align = "left">&rArr;</td>
+                            </tr>
+                            <tr align = "center">
+                                <td>ellipse</td>
+                                <td id = "noWrap"></td>
+                                <td align = "left">&rArr;</td>
+                            </tr>
+                            <tr align = "center">
+                                <td>g</td>
+                                <td id = "noWrap"></td>
+                                <td align = "left">&rArr;</td>
+                            </tr>
+                            <tr align = "center">
+                                <td>image</td>
+                                <td id = "noWrap"></td>
+                                <td align = "left">&rArr;</td>
+                            </tr>
+                            <tr align = "center">
+                                <td>line</td>
+                                <td id = "noWrap"></td>
+                                <td align = "left">&rArr;</td>
+                            </tr>
+                            <tr align = "center">
+                                <td>linearGradient</td>
+                                <td id = "noWrap"></td>
+                                <td align = "left">&rArr;</td>
+                            </tr>
+                            <tr align = "center">
+                                <td>mask</td>
+                                <td id = "noWrap"></td>
+                                <td align = "left">&rArr;</td>
+                            </tr>
+                            <tr align = "center">
+                                <td>path</td>
+                                <td id = "noWrap"></td>
+                                <td align = "left">&rArr;</td>
+                            </tr>
+                            <tr align = "center">
+                                <td>pattern</td>
+                                <td id = "noWrap"></td>
+                                <td align = "left">&rArr;</td>
+                            </tr>
+                            <tr align = "center">
+                                <td>polygon</td>
+                                <td id = "noWrap"></td>
+                                <td align = "left">&rArr;</td>
+                            </tr>
+                            <tr align = "center">
+                                <td>polyline</td>
+                                <td id = "noWrap"></td>
+                                <td align = "left">&rArr;</td>
+                            </tr>
+                            <tr align = "center">
+                                <td>radialGradient</td>
+                                <td id = "noWrap"></td>
+                                <td align = "left">&rArr;</td>
+                            </tr>
+                            <tr align = "center">
+                                <td>rect</td>
+                                <td id = "noWrap"></td>
+                                <td align = "left">&rArr;</td>
+                            </tr>
+                            <tr align = "center">
+                                <td>stop</td>
+                                <td id = "noWrap"></td>
+                                <td align = "left">&rArr;</td>
+                            </tr>
+                            <tr align = "center">
+                                <td>svg</td>
+                                <td id = "noWrap"></td>
+                                <td align = "left">&rArr;</td>
+                            </tr>
+                            <tr align = "center">
+                                <td>text</td>
+                                <td id = "noWrap"></td>
+                                <td align = "left">&rArr;</td>
+                            </tr>
+                            <tr align = "center">
+                                <td>tref</td>
+                                <td id = "noWrap"></td>
+                                <td align = "left">&rArr;</td>
+                            </tr>
+                            <tr align = "center">
+                                <td>tspan</td>
+                                <td id = "noWrap"></td>
+                                <td align = "left">&rArr;</td>
+                            </tr>
+                            <tr align = "center">
+                                <td>textPath</td>
+                                <td id = "noWrap"></td>
+                                <td align = "left">&rArr;</td>
+                            </tr>
+                            <tr align = "center">
+                                <td>use</td>
+                                <td id = "noWrap"></td>
+                                <td align = "left">&rArr;</td>
+                            </tr>
+<!--
+                            <tr align = "center">
+                                <td></td>
+                                <td id = "noWrap"></td>
+                                <td align = "left">&rArr;</td>
+                            </tr>
+-->
+                        </table>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+<!--
+        <tr align = "center" id = "noWrap">
+            <td></td>
+            <td></td>
+            <td></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+-->
+    </table><br/>
+<br/>
+    <pre wrap>
+Attribute = Definition
+dx = default x-axis
+
+rotate = Rotate all characters by this degree. A list of numbers makes each character rotate to its respective value, with remaining characters rotating according to the last value.
+
+textLength = This is a more obscure attribute giving the calculated length of the string. It is meant to allow the rendering engine to fine-tune the positions of the glyphs. when its own measured text length doesn't meet the one provided here.
+
+    </pre><br/>
+<br/>
+Syntax:<br/>
+<pre>
+&lt;! DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;&lt;/title&gt;
+    &lt;style&gt;&lt;/style&gt;
+    &lt;script&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;canvas&gt;&lt;/canvas&gt;
+
+    &lt;svg&gt;
+        &lt;defs&gt;
+            &lt;linearGradient&gt;
+                &lt;stop/&gt;
+            &lt;/linearGradient&gt;
+
+            &lt;radialGradient&gt;
+                &lt;stop/&gt;
+            &lt;/radialGradient&gt;
+
+            &lt;g&gt;
+                &lt;path/&gt;
+            &lt;/g&gt;
+
+            &lt;pattern&gt;
+                &lt;circle/&gt;
+                &lt;rect/&gt;
+            &lt;/pattern&gt;
+
+            &lt;clipPath&gt;
+                &lt;rect/&gt;
+            &lt;/clipPath&gt;
+
+            &lt;mask&gt;
+                &lt;rect/&gt;
+            &lt;/mask&gt;
+        &lt;/defs&gt;
+
+        &lt;circle/&gt;
+        &lt;rect/&gt;
+        &lt;line/&gt;
+        &lt;ellipse/&gt;
+        &lt;polygon/&gt;
+        &lt;polyline/&gt;
+
+        &lt;path/&gt;
+        &lt;text&gt;
+            &lt;tspan&gt;&lt;/tspan&gt;
+            &lt;tref&gt;&lt;/tref&gt;
+            &lt;textPath&gt;&lt;/textPath&gt;
+            &lt;image/&gt;
+        &lt;/text&gt;
+
+        &lt;use/&gt;
+    &lt;/svg&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre><br/>
+<br/>
+Samples:<br/>
+<pre>
+<style>
+#BackgroundPath {
+    stroke: black;
+    stroke-width: 20;
+}
+
+#Path {
+    stroke: gray;
+    stroke-width: 5pt;
+}
+
+#Grid {
+    stroke: Gray;
+    stroke-width: 1pt;
+    fill: transparent;
+}
+
+#RedGuide {
+    stroke: Red;
+    stroke-width: 2pt;
+    fill: transparent;
+    // stroke-dasharray: 5, 5;
+}
+
+#BlueGuide {
+    stroke: Blue;
+    stroke-width: 2pt;
+    fill: transparent;
+    // stroke-dasharray: 5, 5;
+}
+</style>
+<svg width = "200" height = "250" version = "1.1">
+        <rect x = "10" y = "10" width = "30" height = "30" stroke = "black" fill = "transparent" stroke-width = "5"/>
+        <rect x = "60" y = "10" rx = "10" ry = "10" width = "30" height = "30" stroke = "black" fill = "transparent" stroke-width = "5"/>
+
+        <circle cx = "25" cy = "75" r = "20" stroke = "red" fill = "transparent" stroke-width = "5"/>
+        <ellipse cx = "75" cy = "75" rx = "20" ry = "5" stroke = "red" fill = "transparent" stroke-width = "5"/>
+
+        <line x1 = "10" x2 = "50" y1 = "110" y2 = "150" stroke = "orange" stroke-width = "5"/>
+        <polyline points = "60 110 65 120 70 115 75 130 80 125 85 140 90 135 95 150 100 145"
+            stroke = "orange" fill = "transparent" stroke-width = "5"/>
+
+        <polygon points = "50 160 55 180 70 180 60 190 65 205 50 195 35 205 40 190 30 180 45 180"
+            stroke = "green" fill = "transparent" stroke-width = "5"/>
+
+        <path d = "M20, 230    Q40,205 50,230    T90,230" fill = "none" stroke = "blue" stroke-width = "5"/>
+
+        <text>Rotated 45&deg;</text>
+</svg>
+<svg width="160" height="140">
+    <line x1="40" x2="120" y1="20" y2="20" id = "BackgroundPath" stroke-linecap="butt"/>
+    <line x1="40" x2="120" y1="20" y2="20" id = "Path" stroke-linecap="butt"/>
+
+    <line x1="40" x2="120" y1="60" y2="60" id = "BackgroundPath" stroke-linecap="square"/>
+    <line x1="40" x2="120" y1="60" y2="60" id = "Path" stroke-linecap="square"/>
+
+    <line x1="40" x2="120" y1="100" y2="100" id = "BackgroundPath" stroke-linecap="round"/>
+    <line x1="40" x2="120" y1="100" y2="100" id = "Path" stroke-linecap="round"/>
+</svg>
+<svg width="160" height="280">
+    <polyline points="40 60 80 20 120 60" id = "BackgroundPath" stroke-linecap="butt" fill="none" stroke-linejoin="miter"/>
+    <polyline points="40 60 80 20 120 60" id = "Path" stroke-linecap="butt" fill="none" stroke-linejoin="miter"/>
+  
+    <polyline points="40 140 80 100 120 140" id = "BackgroundPath" stroke-linecap="round" fill="none" stroke-linejoin="round"/>
+    <polyline points="40 140 80 100 120 140" id = "Path" stroke-linecap="round" fill="none" stroke-linejoin="round"/>
+  
+    <polyline points="40 220 80 180 120 220" id = "BackgroundPath" stroke-linecap="square" fill="none" stroke-linejoin="bevel"/>
+    <polyline points="40 220 80 180 120 220" id = "Path" stroke-linecap="square" fill="none" stroke-linejoin="bevel"/>
+</svg>
+<svg width = "200" height = "200" viewBox = "0 0 200 200" version = "1.1">
+    <line stroke-dasharray = "5, 5" x1 = "10" y1 = "10" x2 = "190" y2 = "10"/>
+    <line stroke-dasharray = "5, 10" x1 = "10" y1 = "30" x2 = "190" y2 = "30"/>
+    <line stroke-dasharray = "10, 5" x1 = "10" y1 = "50" x2 = "190" y2 = "50"/>
+    <line stroke-dasharray = "5, 1" x1 = "10" y1 = "70" x2 = "190" y2 = "70"/>
+    <line stroke-dasharray = "1, 5" x1 = "10" y1 = "90" x2 = "190" y2 = "90"/>
+    <line stroke-dasharray = "0.9" x1 = "10" y1 = "110" x2 = "190" y2 = "110"/>
+    <line stroke-dasharray = "15, 10, 5" x1 = "10" y1 = "130" x2 = "190" y2 = "130"/>
+    <line stroke-dasharray = "15, 10, 5, 10" x1 = "10" y1 = "150" x2 = "190" y2 = "150"/>
+    <line stroke-dasharray = "15, 10, 5, 10, 15" x1 = "10" y1 = "170" x2 = "190" y2 = "170"/>
+    <line stroke-dasharray = "5, 5, 1, 5" x1 = "10" y1 = "190" x2 = "190" y2 = "190"/>
+
+<style><![CDATA[
+line{
+    stroke: black;
+    stroke-width: 2;
+}
+]]></style>
+</svg>
+
+<svg width = "190" height = "160">
+<!-- Grid -->
+    <use xlink:href = "#DuplicateGridX"/>
+    <use xlink:href = "#DuplicateGridX" transform = "translate(160, 0) rotate(90)"/>
+    <use xlink:href = "#DuplicateGridX" transform = "translate(190, 0) rotate(90)"/>
+
+<!-- Point of Reference -->
+    <polyline points = "10 10, 20 20" id = "RedGuide"/>
+    <polyline points = "50 10, 40 20" id = "RedGuide"/>
+
+    <polyline points = "70 10, 70 20" id = "RedGuide"/>
+    <polyline points = "110 10, 110 20" id = "RedGuide"/>
+
+    <polyline points = "130 10, 120 20" id = "RedGuide"/>
+    <polyline points = "170 10, 180 20" id = "RedGuide"/>
+
+    <polyline points = "10 60, 20 80" id = "RedGuide"/>
+    <polyline points = "50 60, 40 80" id = "RedGuide"/>
+
+    <polyline points = "70 60, 70 80" id = "RedGuide"/>
+    <polyline points = "110 60, 110 80" id = "RedGuide"/>
+
+    <polyline points = "130 60, 120 80" id = "RedGuide"/>
+    <polyline points = "170 60, 180 80" id = "RedGuide"/>
+
+    <polyline points = "10 110, 20 140" id = "RedGuide"/>
+    <polyline points = "50 110, 40 140" id = "RedGuide"/>
+
+    <polyline points = "70 110, 70 140" id = "RedGuide"/>
+    <polyline points = "110 110, 110 140" id = "RedGuide"/>
+
+    <polyline points = "130 110, 120 140" id = "RedGuide"/>
+    <polyline points = "170 110, 180 140" id = "RedGuide"/>
+
+
+    <path d = "M10 10    C20 20, 40 20, 50 10" stroke = "black" fill = "transparent"/>
+    <path d = "M70 10    C70 20, 110 20, 110 10" stroke = "black" fill = "transparent"/>
+    <path d = "M130 10    C120 20, 180 20, 170 10" stroke = "black" fill = "transparent"/>
+    <path d = "M10 60    C20 80, 40 80, 50 60" stroke = "black" fill = "transparent"/>
+    <path d = "M70 60    C70 80, 110 80, 110 60" stroke = "black" fill = "transparent"/>
+    <path d = "M130 60    C120 80, 180 80, 170 60" stroke = "black" fill = "transparent"/>
+    <path d = "M10 110    C20 140, 40 140, 50 110" stroke = "black" fill = "transparent"/>
+    <path d = "M70 110    C70 140, 110 140, 110 110" stroke = "black" fill = "transparent"/>
+    <path d = "M130 110    C120 140, 180 140, 170 110" stroke = "black" fill = "transparent"/>
+</svg>
+
+<svg width = "190" height = "160">
+<!-- Grid -->
+    <defs>
+        <g id = "DuplicateGrid">
+            <polygon points = "0 0, 0 160, 10 160, 10 0" id = "Grid"/>
+        </g>
+    </defs>
+
+    <defs>
+        <g id = "DuplicateGridX">
+            <use xlink:href = "#DuplicateGrid"/>
+            <use xlink:href = "#DuplicateGrid" transform = "translate(10, 0)"/>
+            <use xlink:href = "#DuplicateGrid" transform = "translate(20, 0)"/>
+            <use xlink:href = "#DuplicateGrid" transform = "translate(30, 0)"/>
+            <use xlink:href = "#DuplicateGrid" transform = "translate(40, 0)"/>
+            <use xlink:href = "#DuplicateGrid" transform = "translate(50, 0)"/>
+            <use xlink:href = "#DuplicateGrid" transform = "translate(60, 0)"/>
+            <use xlink:href = "#DuplicateGrid" transform = "translate(70, 0)"/>
+            <use xlink:href = "#DuplicateGrid" transform = "translate(80, 0)"/>
+            <use xlink:href = "#DuplicateGrid" transform = "translate(90, 0)"/>
+            <use xlink:href = "#DuplicateGrid" transform = "translate(100, 0)"/>
+            <use xlink:href = "#DuplicateGrid" transform = "translate(110, 0)"/>
+            <use xlink:href = "#DuplicateGrid" transform = "translate(120, 0)"/>
+            <use xlink:href = "#DuplicateGrid" transform = "translate(130, 0)"/>
+            <use xlink:href = "#DuplicateGrid" transform = "translate(140, 0)"/>
+            <use xlink:href = "#DuplicateGrid" transform = "translate(150, 0)"/>
+            <use xlink:href = "#DuplicateGrid" transform = "translate(160, 0)"/>
+            <use xlink:href = "#DuplicateGrid" transform = "translate(170, 0)"/>
+            <use xlink:href = "#DuplicateGrid" transform = "translate(180, 0)"/>
+            <use xlink:href = "#DuplicateGrid" transform = "translate(190, 0)"/>
+        </g>
+    </defs>
+
+    <use xlink:href = "#DuplicateGridX"/>
+    <use xlink:href = "#DuplicateGridX" transform = "translate(160, 0) rotate(90)"/>
+    <use xlink:href = "#DuplicateGridX" transform = "translate(190, 0) rotate(90)"/>
+
+<!-- Point of Reference -->
+    <polyline points = "40 10, 10, 80" id = "RedGuide"/>
+    <polyline points = "65 10, 95 80" id = "RedGuide"/>
+    <polyline points = "95 80, 125 150" id = "BlueGuide"/>
+    <polyline points = "180 80, 150 150" id = "RedGuide"/>
+
+
+    <path d = "M10 80    C40 10, 65 10, 95 80    S150 150, 180 80" stroke = "black" fill = "transparent"/>
+</svg>
+
+<svg width = "190" height = "160">
+<!-- Grid -->
+    <use xlink:href = "#DuplicateGridX"/>
+    <use xlink:href = "#DuplicateGridX" transform = "translate(160, 0) rotate(90)"/>
+    <use xlink:href = "#DuplicateGridX" transform = "translate(190, 0) rotate(90)"/>
+
+<!-- Point of Reference -->
+    <polyline points = "10 80, 95 10, 180 80" id = "RedGuide"/>
+
+
+    <path d = "M10 80    Q95 10 180 80" stroke = "black" fill = "transparent"/>
+</svg>
+
+<svg width = "190" height = "160">
+<!-- Grid -->
+    <use xlink:href = "#DuplicateGridX"/>
+    <use xlink:href = "#DuplicateGridX" transform = "translate(160, 0) rotate(90)"/>
+    <use xlink:href = "#DuplicateGridX" transform = "translate(190, 0) rotate(90)"/>
+
+<!-- Point of Reference -->
+    <polyline points = "10 80, 52.5 10, 95 80" id = "RedGuide"/>
+    <polyline points = "95 80, 137.5 150, 180 80" id = "BlueGuide"/>
+
+    <path d = "M10 80    Q52.5 10, 95 80    T180 80" stroke = "black" fill = "transparent"/>
+</svg>
+
+<svg width = "320" height = "320">
+<!-- Grid -->
+    <use xlink:href = "#DuplicateGridX"/>
+    <use xlink:href = "#DuplicateGridX" transform = "translate(0, 160)"/>
+    <use xlink:href = "#DuplicateGridX" transform = "translate(200, 0)"/>
+    <use xlink:href = "#DuplicateGridX" transform = "translate(200, 160)"/>
+    <use xlink:href = "#DuplicateGridX" transform = "translate(160, 0) rotate(90)"/>
+    <use xlink:href = "#DuplicateGridX" transform = "translate(320, 0) rotate(90)"/>
+    <use xlink:href = "#DuplicateGridX" transform = "translate(160, 200) rotate(90)"/>
+    <use xlink:href = "#DuplicateGridX" transform = "translate(320, 200) rotate(90)"/>
+
+<!-- Point of Reference -->
+
+
+
+    <path d = "M10 315
+        L110 215
+        A30 50 0 0 1 162.55 162.45
+        L172.55 152.45
+        A30 50 -45 0 1 215.1 109.9
+        L315 10"
+        stroke = "black"
+        fill = "green"
+        stroke-width = "2"
+        fill-opacity = "0.5"/>
+
+    <path d = "M10 315
+        L110 215
+        A30 50 0 0 0 162.55 162.45
+        L172.55 152.45
+        A30 50 -45 0 0 215.1 109.9
+        L315 10"
+        stroke = "black"
+        fill = "transparent"
+        stroke-width = "2"
+        fill-opacity = "0.5"
+        stroke-dasharray = "5, 5"/>
+</svg>
+
+<svg width = "325" height = "325">
+    <path d = "M80 80
+        A 45 45, 0, 0, 0, 125 125
+        L 125 80 Z" fill = "green"
+        style = "stroke: Black; stroke-width: 2.5pt;"/>
+    <path d = "M80 80
+        A 45 45, 0, 1, 0, 125 125
+        L 125 80 Z" fill = "transparent"
+        style = "stroke: Black; stroke-width: 2.5pt;"
+        stroke-dasharray = "5, 5"/>
+    <path d = "M80 80
+        A 45 45, 0, 0, 1, 125 125
+        L 125 80 Z" fill = "transparent"
+        style = "stroke: Black; stroke-width: 2.5pt;"
+        stroke-dasharray = "5, 5"/>
+    <path d = "M80 80
+        A 45 45, 0, 1, 1, 125 125
+        L 125 80 Z" fill = "transparent"
+        style = "stroke: Black; stroke-width: 2.5pt;"
+        stroke-dasharray = "5, 5"/>
+
+    <path d = "M230 80
+        A 45 45, 0, 1, 0, 275 125
+        L 275 80 Z" fill = "red"
+        style = "stroke: Black; stroke-width: 2.5pt;"/>
+    <path d = "M230 80
+        A 45 45, 0, 0, 1, 275 125
+        L 275 80 Z" fill = "transparent"
+        style = "stroke: Black; stroke-width: 2.5pt;"
+        stroke-dasharray = "5, 5"/>
+    <path d = "M230 80
+        A 45 45, 0, 1, 1, 275 125
+        L 275 80 Z" fill = "transparent"
+        style = "stroke: Black; stroke-width: 2.5pt;"
+        stroke-dasharray = "5, 5"/>
+    <path d = "M230 80
+        A 45 45, 0, 0, 0, 275 125
+        L 275 80 Z" fill = "transparent"
+        style = "stroke: Black; stroke-width: 2.5pt;"
+        stroke-dasharray = "5, 5"/>
+
+    <path d = "M80 230
+        A 45 45, 0, 0, 1, 125 275
+        L 125 230 Z" fill = "purple"
+        style = "stroke: Black; stroke-width: 2.5pt;"/>
+    <path d = "M80 230
+        A 45 45, 0, 1, 1, 125 275
+        L 125 230 Z" fill = "transparent"
+        style = "stroke: Black; stroke-width: 2.5pt;"
+        stroke-dasharray = "5, 5"/>
+    <path d = "M80 230
+        A 45 45, 0, 0, 0, 125 275
+        L 125 230 Z" fill = "transparent"
+        style = "stroke: Black; stroke-width: 2.5pt;"
+        stroke-dasharray = "5, 5"/>
+    <path d = "M80 230
+        A 45 45, 0, 1, 0, 125 275
+        L 125 230 Z" fill = "transparent"
+        style = "stroke: Black; stroke-width: 2.5pt;"
+        stroke-dasharray = "5, 5"/>
+
+    <path d = "M230 230
+        A 45 45, 0, 1, 1, 275 275
+        L 275 230 Z" fill = "blue"
+        style = "stroke: Black; stroke-width: 2.5pt;"/>
+    <path d = "M230 230
+        A 45 45, 0, 0, 0, 275 275
+        L 275 230 Z" fill = "transparent"
+        style = "stroke: Black; stroke-width: 2.5pt;"
+        stroke-dasharray = "5, 5"/>
+    <path d = "M230 230
+        A 45 45, 0, 1, 0, 275 275
+        L 275 230 Z" fill = "transparent"
+        style = "stroke: Black; stroke-width: 2.5pt;"
+        stroke-dasharray = "5, 5"/>
+    <path d = "M230 230
+        A 45 45, 0, 0, 1, 275 275
+        L 275 230 Z" fill = "transparent"
+        style = "stroke: Black; stroke-width: 2.5pt;"
+        stroke-dasharray = "5, 5"/>
+</svg>
+
+<svg width="120" height="240" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+      <linearGradient id="Gradient1">
+        <stop class="stop1" offset="0%"/>
+        <stop class="stop2" offset="50%"/>
+        <stop class="stop3" offset="100%"/>
+      </linearGradient>
+      <linearGradient id="Gradient2" x1="0" x2="0" y1="0" y2="1">
+        <stop offset="0%" stop-color="red"/>
+        <stop offset="50%" stop-color="black" stop-opacity="0"/>
+        <stop offset="100%" stop-color="blue"/>
+      </linearGradient>
+      <style type="text/css"><![CDATA[
+        #rect1 { fill: url(#Gradient1); }
+        .stop1 { stop-color: red; }
+        .stop2 { stop-color: black; stop-opacity: 0; }
+        .stop3 { stop-color: blue; }
+      ]]></style>
+  </defs>
+ 
+  <rect id="rect1" x="10" y="10" rx="15" ry="15" width="100" height="100"/>
+  <rect x="10" y="120" rx="15" ry="15" width="100" height="100" fill="url(#Gradient2)"/>
+  
+</svg>
+
+<?xml version="1.0" standalone="no"?>
+<svg width="120" height="240" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+      <radialGradient id="RadialGradient1">
+        <stop offset="0%" stop-color="red"/>
+        <stop offset="100%" stop-color="blue"/>
+      </radialGradient>
+      <radialGradient id="RadialGradient2" cx="0.25" cy="0.25" r="0.25">
+        <stop offset="0%" stop-color="red"/>
+        <stop offset="100%" stop-color="blue"/>
+      </radialGradient>
+  </defs>
+ 
+  <rect x="10" y="10" rx="15" ry="15" width="100" height="100" fill="url(#RadialGradient1)"/> 
+  <rect x="10" y="120" rx="15" ry="15" width="100" height="100" fill="url(#RadialGradient2)"/> 
+  
+</svg>
+
+<?xml version="1.0" standalone="no"?>
+<svg width="120" height="120" version="1.1"
+  xmlns="http://www.w3.org/2000/svg">
+  <defs>
+      <radialGradient id="Gradient"
+            cx="0.5" cy="0.5" r="0.5" fx="0.25" fy="0.25">
+        <stop offset="0%" stop-color="red"/>
+        <stop offset="100%" stop-color="blue"/>
+      </radialGradient>
+  </defs>
+ 
+  <rect x="10" y="10" rx="15" ry="15" width="100" height="100"
+        fill="url(#Gradient)" stroke="black" stroke-width="2"/>
+
+  <circle cx="60" cy="60" r="50" fill="transparent" stroke="white" stroke-width="2"/>
+  <circle cx="35" cy="35" r="2" fill="white" stroke="white"/>
+  <circle cx="60" cy="60" r="2" fill="white" stroke="white"/>
+  <text x="38" y="40" fill="white" font-family="sans-serif" font-size="10pt">(fx,fy)</text>
+  <text x="63" y="63" fill="white" font-family="sans-serif" font-size="10pt">(cx,cy)</text>
+  
+</svg>
+
+<?xml version="1.0" standalone="no"?>
+<svg width="220" height="220" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+      <radialGradient id="GradientPad"
+            cx="0.5" cy="0.5" r="0.4" fx="0.75" fy="0.75"
+            spreadMethod="pad">
+        <stop offset="0%" stop-color="red"/>
+        <stop offset="100%" stop-color="blue"/>
+      </radialGradient>
+      <radialGradient id="GradientRepeat"
+            cx="0.5" cy="0.5" r="0.4" fx="0.75" fy="0.75"
+            spreadMethod="repeat">
+        <stop offset="0%" stop-color="red"/>
+        <stop offset="100%" stop-color="blue"/>
+      </radialGradient>
+      <radialGradient id="GradientReflect"
+            cx="0.5" cy="0.5" r="0.4" fx="0.75" fy="0.75"
+            spreadMethod="reflect">
+        <stop offset="0%" stop-color="red"/>
+        <stop offset="100%" stop-color="blue"/>
+      </radialGradient>
+  </defs>
+
+  <rect x="10" y="10" rx="15" ry="15" width="100" height="100" fill="url(#GradientPad)"/>
+  <rect x="10" y="120" rx="15" ry="15" width="100" height="100" fill="url(#GradientRepeat)"/>
+  <rect x="120" y="120" rx="15" ry="15" width="100" height="100" fill="url(#GradientReflect)"/>
+
+  <text x="15" y="30" fill="white" font-family="sans-serif" font-size="12pt">Pad</text>
+  <text x="15" y="140" fill="white" font-family="sans-serif" font-size="12pt">Repeat</text>
+  <text x="125" y="140" fill="white" font-family="sans-serif" font-size="12pt">Reflect</text>
+
+</svg>
+<button>
+    <svg height = "50" width = "50">
+        <circle cx = "25" cy = "25" r = "20" style = "stroke: Black; stroke-width: 2; fill: Blue;"/>
+    </svg>
+ </button>
+</pre>
+</body>
+</html>
