@@ -1,0 +1,965 @@
+<! DOCTYPE html>
+<html>
+<head>
+<title>Basic C++ Programming Language</title>
+<style>
+#No_Wrap {
+    white-space: pre;
+}
+
+#Red_Colored {
+    color: OrangeRed;
+}
+
+#Blue_Colored {
+    color: MediumBlue;
+}
+
+table, th, td {
+    border-style: solid;
+}
+
+body {
+    display: inline-block;
+}
+</style>
+</head>
+<body>
+
+<h1 align = "center">Welcome to Basic C++ Programming</h1>
+<h2 align = "center">(for Machine Language)</h2>
+<br/>
+<br/>
+<h3 align = "left">Basic Start of C++ Programming</h3>
+<span id = "No_Wrap">#include &lt;iostream&gt;
+using namespace std;
+
+int main ()
+{
+
+&larr; Start Your Code(s) Here &rarr;
+
+return 0;
+}</span>
+<br/>
+<br/>
+<h3 align = "left">File Format of a C++ Program
+(when you save the file)</h3>
+<span id = "No_Wrap"><span id = "Red_Colored">unknown
+Needs a special software program temporarily to practice the Basic C++ Programming Language.
+One of the special software program is CodeBlocks.</span></span>
+<br/>
+<br/>
+<br/>
+<br/>
+<h2 align = "center">Tables of C++ Codes and Its Informations (for Basic C++ Programming)</h2>
+<table border = "2" align = "center">
+<tr>
+<th colspan = "2">Definition of Basic Syntax Preparation of a Blank C++ File</th>
+</tr>
+<tr>
+<th>C++ Code(s)</th>
+<th>Description</th>
+</tr>
+<tr>
+<td align = "center" id = "No_Wrap">#include</td>
+<td>&rArr;&nbsp;Tells the preprocessor to include the iostream standard file. This specific file (iostream) includes the declarations of the basic standard input-output library in C++.</td>
+</tr>
+<tr>
+<td align = "center">&lt;iostream&gt;</td>
+<td id = "Red_Colored">&rArr;&nbsp;unknown</td>
+</tr>
+<tr>
+<td align = "center" id = "No_Wrap">using namespace std;</td>
+<td>&rArr;&nbsp;All the elements of the standard C++ library are declared within what is called a namespace, the namespace with the name std. So in order to access its functionality we declare with this expression that we will be using these entities. This line is very frequent in C++ programs that use the standard library, and in fact it will be included in most of the source codes.</td>
+</tr>
+<tr>
+<td id = "No_Wrap">int main ()
+{
+
+}</td>
+<td>&rArr;&nbsp;This line corresponds to the beginning of the definition of the main function. The main function is the point by where all C++ programs start their execution, independently of its location within the source code. It does not matter whether there are other functions with other names defined before or after it - the instructions contained within this function's definition will always be the first ones to be executed in any C++ program. For that same reason, it is essential that all C++ programs have a main function.</td>
+</tr>
+<tr>
+<td align = "center" id = "No_Wrap">return 0;</td>
+<td>&rArr;&nbsp;The program will return to 0 after the program execution.</td>
+</tr>
+</table>
+
+
+<p>
+<br/><br/>
+</p>
+
+
+<table border = "2" align = "center">
+<tr>
+<th colspan = "3">Some of the Basic Codes of C++ Programming</th>
+</tr>
+<tr>
+<th colspan = "3">Input/Output Statements<br/>
+and<br/>
+Codes that Accepts or Change the Input Data for the Program</th>
+</tr>
+<tr>
+<th>C++ Code(s)</th>
+<th>Syntax</th>
+<th>Definition</th>
+</tr>
+<tr align = "center">
+<td id = "No_Wrap">cout &lt;&lt; " ";</td>
+<td id = "No_Wrap">cout &lt;&lt; "User Defined Message";</td>
+<td align = "left">&rArr;&nbsp;<i>cout</i> represents the standard output stream in C++, and the meaning of the entire statement is to insert a sequence of characters into the standard output stream (which usually is the screen).</td>
+</tr>
+<tr align = "center">
+<td id = "No_Wrap">cin &gt;&gt; __;</td>
+<td id = "No_Wrap">cin &gt;&gt; name;</td>
+<td align = "left">&rArr;&nbsp;Use the function of cout to input any value on your screen.</td>
+</tr>
+<tr align = "center">
+<td id = "No_Wrap">endl</td>
+<td id = "No_Wrap">cout &lt;&lt; "User Defined Message" &lt;&lt; endl;</td>
+<td align = "left">&rArr;&nbsp;The endl manipulator produces a newline character, exactly as the insertion of '\n' does, but it also has an additional behavior when it is used with buffered streams: the buffer is flushed. Anyway, cout will be an unbuffered stream in most cases, so you can generally use both the \n escape character and the endl manipulator in order to specify a new line without any difference in its behavior.</td>
+</tr>
+</table>
+
+
+<p>
+<br/><br/>
+</p>
+
+
+<table border = "2" align = "center">
+<tr>
+<th colspan = "4">Basic Declaration of C++ Programming</th>
+</tr>
+<tr>
+<th>Primitive Data Type</th>
+<th>Name</th>
+<th>Syntax</th>
+<th>Definition</th>
+</tr>
+<tr align = "center">
+<td>int</td>
+<td>Integer</td>
+<td id = "No_Wrap"><span id = "Blue_Colored">int</span> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name1, name2, ....nameF;</option>
+<option>name1 = num, name2 = num, ....nameF = num;</option>
+</select></td>
+<td rowspan = "4" align = "left">&rArr;&nbsp;Represents whole number.</td>
+</tr>
+<tr align = "center">
+<td>byte</td>
+<td>Byte</td>
+<td id = "No_Wrap"><span id = "Blue_Colored">byte</span> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name1, name2, ....nameF;</option>
+<option>name1 = num, name2 = num, ....nameF = num;</option>
+</select></td>
+
+</tr>
+<tr align = "center">
+<td>short</td>
+<td>Short</td>
+<td id = "No_Wrap"><span id = "Blue_Colored">short</span> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name1, name2, ....nameF;</option>
+<option>name1 = num, name2 = num, ....nameF = num;</option>
+</select></td>
+
+</tr>
+<tr align = "center">
+<td>long</td>
+<td>Long</td>
+<td id = "No_Wrap"><span id = "Blue_Colored">long</span> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name1, name2, ....nameF;</option>
+<option>name1 = num, name2 = num, ....nameF = num;</option>
+</select></td>
+
+</tr>
+<tr align = "center">
+<td>float</td>
+<td>Floating-Point</td>
+<td id = "No_Wrap"><span id = "Blue_Colored">float</span> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name1, name2, ....nameF;</option>
+<option>name1 = num, name2 = num, ....nameF = num;</option>
+</select></td>
+<td rowspan = "2" align = "left">&rArr;&nbsp;Represents number with decimal point.</td>
+</tr>
+<tr align = "center">
+<td>double</td>
+<td>Double</td>
+<td id = "No_Wrap"><span id = "Blue_Colored">double</span> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name1, name2, ....nameF;</option>
+<option>name1 = num, name2 = num, ....nameF = num;</option>
+</select></td>
+
+</tr>
+<tr align = "center">
+<td>string</td>
+<td>String</td>
+<td id = "No_Wrap"><span id = "Blue_Colored">string</span> <select>
+<option>name;</option>
+<option>name = "letter(s), word(s) or symbol(s)";</option>
+<option>name, ....nameF;</option>
+<option>name = "letter(s), word(s) or symbol(s)", ....nameF = "letter(s), word(s) or symbol(s)";</option>
+</select></td>
+<td align = "left">&rArr;&nbsp;Represents a data type that contains multiple characters.</td>
+</tr>
+<tr align = "center">
+<td>char</td>
+<td>Character</td>
+<td id = "No_Wrap"><span id = "Blue_Colored">char</span> <select>
+<option>name;</option>
+<option>name = 'letter, word or symbol';</option>
+<option>name, ....nameF;</option>
+<option>name = 'letter, word or symbol', ....nameF = 'letter, word or symbol';</option>
+</select></td>
+<td align = "left">&rArr;&nbsp;Represents a single unicode character. It must have its literal enclosed in single quotes (' ').</td>
+</tr>
+<tr align = "center">
+<td>boolean</td>
+<td>Boolean</td>
+<td id = "No_Wrap"><span id = "Blue_Colored">boolean</span> <select>
+<option>name;</option>
+<option>name = true;</option>
+<option>name1, name2, ....nameF;</option>
+<option>name1 = true, name2 = false, ....nameF = false;</option>
+</select></td>
+<td align = "left">&rArr;&nbsp;Represents True or False.</td>
+</tr>
+</table>
+
+
+<p>
+<br/><br/>
+</p>
+
+
+<table border = "2" align = "center">
+<tr>
+<th colspan = "2">Character Literals or Escape Sequence</th>
+</tr>
+<tr>
+<th>Symbols</th>
+<th>Name</th>
+</tr>
+<tr align = "center">
+<td>\n</td>
+<td>Newline</td>
+</tr>
+<tr align = "center">
+<td>\r</td>
+<td>Carriage Return</td>
+</tr>
+<tr align = "center">
+<td>\t</td>
+<td>Tab</td>
+</tr>
+<tr align = "center">
+<td>\v</td>
+<td>Vertical Tab</td>
+</tr>
+<tr align = "center">
+<td>\b</td>
+<td>Backspace</td>
+</tr>
+<tr align = "center">
+<td>\f</td>
+<td>Form Feed (Page Feed)</td>
+</tr>
+<tr align = "center">
+<td>\a</td>
+<td>Alert (Beep)</td>
+</tr>
+<tr align = "center">
+<td>\'</td>
+<td>Single Quote (')</td>
+</tr>
+<tr align = "center">
+<td>\"</td>
+<td>Double Quote (")</td>
+</tr>
+<tr align = "center">
+<td>\?</td>
+<td>Question Mark (?)</td>
+</tr>
+<tr align = "center">
+<td>\\</td>
+<td>Backslash (\)</td>
+</tr>
+</table>
+
+
+<p>
+<br/><br/>
+</p>
+
+
+<table border = "2" align = "center">
+<tr>
+<th colspan = "3">Arithmetic Operators</th>
+</tr>
+<tr>
+<th>Symbols</th>
+<th>Name</th>
+<th>Definition</th>
+</tr>
+<tr align = "center">
+<td>+</td>
+<td>Addition</td>
+<td align = "left">&rArr;&nbsp;Adds any number(s).</td>
+</tr>
+<tr align = "center">
+<td>-</td>
+<td>Subtraction</td>
+<td align = "left">&rArr;&nbsp;Subtracts any number(s).</td>
+</tr>
+<tr align = "center">
+<td>*</td>
+<td>Multiplication</td>
+<td align = "left">&rArr;&nbsp;Multiplies any number(s).</td>
+</tr>
+<tr align = "center">
+<td>/</td>
+<td>Division</td>
+<td align = "left">&rArr;&nbsp;Divides any number(s).</td>
+</tr>
+<tr align = "center">
+<td>%</td>
+<td>Modulus</td>
+<td align = "left">&rArr;&nbsp;Computes the remainder of dividing any number(s).</td>
+</tr>
+</table>
+
+
+<p>
+<br/><br/>
+</p>
+
+
+<table border = "2" align = "center">
+<tr>
+<th colspan = "2">Relational and Equality Operators</th>
+</tr>
+<tr>
+<th>Symbols</th>
+<th>Name</th>
+</tr>
+<tr align = "center">
+<td>&gt;</td>
+<td>Greater than</td>
+</tr>
+<tr align = "center">
+<td>&lt;</td>
+<td>Less than</td>
+</tr>
+<tr align = "center">
+<td>&gt;=</td>
+<td>Greater than or Equal to</td>
+</tr>
+<tr align = "center">
+<td>&lt;=</td>
+<td>Less than or Equal to</td>
+</tr>
+<tr align = "center">
+<td>==</td>
+<td>Equal to</td>
+</tr>
+<tr align = "center">
+<td>!=</td>
+<td>Not equal to</td>
+</tr>
+</table>
+
+
+<p>
+<br/><br/>
+</p>
+
+
+<table border = "2" align = "center">
+<tr>
+<th colspan = "8">Logical Operators</th>
+</tr>
+<tr>
+<th>Symbols</th>
+<th>Name</th>
+<th>Syntax</th>
+<th>Definition</th>
+
+<td rowspan = "13" id = "No_Wrap">  </td>
+
+<th colspan = "3">Truth Table</th>
+</tr>
+<tr align = "center">
+<td rowspan = "3">&&</td>
+<td rowspan = "3">AND Operator</td>
+<td rowspan = "3" id = "No_Wrap">num1 && num2</td>
+<td rowspan = "3" align = "left" id = "Red_Colored">&rArr;&nbsp;unknown</td>
+
+<th>num1</th>
+<th>num2</th>
+<th>result</th>
+</tr>
+
+<tr align = "center" id = "No_Wrap">
+<td>True
+True
+False
+False</td>
+<td>True
+False
+True
+False</td>
+<td>True
+False
+False
+False</td>
+</tr>
+
+<tr>
+<td colspan = "3"><br/></td>
+</tr>
+<tr align = "center">
+<td rowspan = "3">||</td>
+<td rowspan = "3">OR Operator</td>
+<td rowspan = "3" id = "No_Wrap">num1 || num2</td>
+<td rowspan = "3" align = "left" id = "Red_Colored">&rArr;&nbsp;unknown</td>
+
+<th>num1</th>
+<th>num2</th>
+<th>result</th>
+</tr>
+
+<tr align = "center" id = "No_Wrap">
+<td>True
+True
+False
+False</td>
+<td>True
+False
+True
+False</td>
+<td>True
+True
+True
+False</td>
+</tr>
+
+<tr>
+<td colspan = "3"><br/></td>
+</tr>
+<tr align = "center">
+<td rowspan = "3">!</td>
+<td rowspan = "3">NOT Operator (Value Inverter)</td>
+<td rowspan = "3" id = "No_Wrap">! num1</td>
+<td rowspan = "3" align = "left" id = "Red_Colored">&rArr;&nbsp;unknown</td>
+
+<th colspan = "2">num1</th>
+
+<th>result</th>
+</tr>
+<tr align = "center" id = "No_Wrap">
+<td colspan = "2">True
+False</td>
+
+<td>False
+True</td>
+</tr>
+
+<tr>
+<td colspan = "3"><br/></td>
+</tr>
+<tr align = "center">
+<td rowspan = "3">,</td>
+<td rowspan = "3">Comma Operator</td>
+<td rowspan = "3" id = "No_Wrap">num1, num2</td>
+<td rowspan = "3" align = "left">&rArr;&nbsp;It is used to separate two or more expressions that are included where only one expression is expected. When the set of expressions has to be evaluated for a value, only the rightmost expression is considered.</td>
+
+<th>num1</th>
+<th>num2</th>
+<th>result</th>
+</tr>
+
+<tr align = "center" id = "No_Wrap">
+<td>True
+True
+False
+False</td>
+<td>True
+False
+True
+False</td>
+<td id = "No_Wrap"><span id = "Red_Colored">unknown</span></td>
+</tr>
+
+<tr>
+<td colspan = "3"><br/></td>
+</tr>
+</table>
+
+
+<p>
+<br/><br/>
+</p>
+
+
+<table border = "2" align = "center">
+<tr>
+<th colspan = "3">Some of the Other Operators</th>
+</tr>
+<tr>
+<th>Symbols</th>
+<th>Name</th>
+<th>Definition</th>
+</tr>
+<tr align = "center">
+<td>+=, -=, *=, /=, %=, &gt;&gt;=, &lt;&lt;=, &=, ^=, |=</td>
+<td>Compound Assignment</td>
+<td align = "left" id = "Red_Colored">&rArr;&nbsp;unknown</td>
+</tr>
+<tr align = "center">
+<td>variable++</td>
+<td rowspan = "2">Increment Operator</td>
+<td align = "left">&rArr;&nbsp;Increments variable by 1, evaluates to the value of variable before it was incremented.</td>
+</tr>
+<tr align = "center">
+<td>++variable</td>
+
+<td align = "left">&rArr;&nbsp;Increments variable by 1, evaluates to the value of variable after it was incremented.</td>
+</tr>
+<tr align = "center">
+<td>variable--</td>
+<td rowspan = "2">Decrement Operator</td>
+<td align = "left">&rArr;&nbsp;Decrements variable by 1, evaluates to the value of variable before it was decremented.</td>
+</tr>
+<tr align = "center">
+<td>--variable</td>
+
+<td align = "left">&rArr;&nbsp;Decrements variable by 1, evaluates to the value of variable after it was decremented.</td>
+</tr>
+</table>
+
+
+<p>
+<br/><br/>
+</p>
+
+
+<table border = "2" align = "center">
+<tr>
+<th colspan = "4">Some Statements that Control the Flow of the Program</th>
+</tr>
+<tr>
+<th>C++ Code(s)</th>
+<th>Name</th>
+<th>Syntax</th>
+<th>Description</th>
+</tr>
+<tr>
+<td id = "No_Wrap">if ()
+{
+
+}
+
+else if ()
+{
+
+}
+
+else
+{
+
+}</td>
+<td align = "center">if-else Statement</td>
+<td id = "No_Wrap">if (name1 <select>
+<option>Relational and Equality Operator</option>
+<option>&lt;=</option>
+<option>&gt;=</option>
+<option>==</option>
+<option>!=</option>
+</select> <select>
+<option>name2</option>
+<option>num1</option>
+</select>)
+{
+// Do Your Codes Here
+}
+
+else if (name1 <select>
+<option>Relational and Equality Operator</option>
+<option>&lt;=</option>
+<option>&gt;=</option>
+<option>==</option>
+<option>!=</option>
+</select> <select>
+<option>name2</option>
+<option>num1</option>
+</select>)
+{
+// Do Your Codes Here
+}
+
+else
+{
+// Do Your Codes Here
+}
+
+
+or
+
+
+if ((name1 <select>
+<option>Relational and Equality Operator</option>
+<option>&lt;=</option>
+<option>&gt;=</option>
+<option>==</option>
+<option>!=</option>
+</select> <select>
+<option>name2</option>
+<option>num1</option>
+</select>) <select>
+<option>Logical Operator</option>
+<option>&&</option>
+<option>||</option>
+<option>!</option>
+<option>,</option>
+</select> (name3 <select>
+<option>Relational and Equality Operator</option>
+<option>&lt;=</option>
+<option>&gt;=</option>
+<option>==</option>
+<option>!=</option>
+</select> <select>
+<option>name4</option>
+<option>num2</option>
+</select>))
+{
+// Do Your Codes Here
+}
+
+else if ((name1 <select>
+<option>Relational and Equality Operator</option>
+<option>&lt;=</option>
+<option>&gt;=</option>
+<option>==</option>
+<option>!=</option>
+</select> <select>
+<option>name2</option>
+<option>num1</option>
+</select>) <select>
+<option>Logical Operator</option>
+<option>&&</option>
+<option>||</option>
+<option>!</option>
+<option>,</option>
+</select> (name3 <select>
+<option>Relational and Equality Operator</option>
+<option>&lt;=</option>
+<option>&gt;=</option>
+<option>==</option>
+<option>!=</option>
+</select> <select>
+<option>name4</option>
+<option>num2</option>
+</select>))
+{
+// Do Your Codes Here
+}
+
+else
+{
+// Do Your Codes Here
+}</td>
+<td>&rArr;&nbsp;Used to test your code(s) to run the program under <b>if-else Statement</b>. If the arguments under <b>if Statement</b> is true, the code(s) under that statement will run the program. If it is false, the <b>else Statement</b> will run the program. If an <i>if Statement</i> is declared right beside an <i>else Statement</i>, it will test first all the code(s) outside an <i>else Statement</i> before running that statement together with an <i>if Statement</i>.</td>
+</tr>
+<tr>
+<td id = "No_Wrap">while ()
+{
+
+}</td>
+<td align = "center">while Loop</td>
+<td id = "No_Wrap">while (name1 <select>
+<option>Relational and Equality Operator</option>
+<option>&lt;=</option>
+<option>&gt;=</option>
+<option>==</option>
+<option>!=</option>
+</select> <select>
+<option>name2</option>
+<option>num1</option>
+</select>)
+{
+// Do Your Codes Here
+}
+
+
+or
+
+
+while ((name1 <select>
+<option>Relational and Equality Operator</option>
+<option>&lt;=</option>
+<option>&gt;=</option>
+<option>==</option>
+<option>!=</option>
+</select> <select>
+<option>name2</option>
+<option>num1</option>
+</select>) <select>
+<option>Logical Operator</option>
+<option>&&</option>
+<option>||</option>
+<option>!</option>
+<option>,</option>
+</select> (name3 <select>
+<option>Relational and Equality Operator</option>
+<option>&lt;=</option>
+<option>&gt;=</option>
+<option>==</option>
+<option>!=</option>
+</select> <select>
+<option>name4</option>
+<option>num2</option>
+</select>))
+{
+// Do Your Codes Here
+}</td>
+<td rowspan = "2">&rArr;&nbsp;Used to loop a statement simultaneously if the argument in <i>while ()</i> is true. If the argument from that is false, the loop will be terminated.</td>
+</tr>
+<tr>
+<td id = "No_Wrap">do
+{
+
+}
+while ();</td>
+<td align = "center">do-while Loop</td>
+<td id = "No_Wrap">do
+{
+// Do Your Codes Here
+}
+while (name1 <select>
+<option>Relational and Equality Operator</option>
+<option>&lt;=</option>
+<option>&gt;=</option>
+<option>==</option>
+<option>!=</option>
+</select> <select>
+<option>name2</option>
+<option>num1</option>
+</select>);
+
+
+or
+
+
+do
+{
+// Do Your Codes Here
+}
+while ((name1 <select>
+<option>Relational and Equality Operator</option>
+<option>&lt;=</option>
+<option>&gt;=</option>
+<option>==</option>
+<option>!=</option>
+</select> <select>
+<option>name2</option>
+<option>num1</option>
+</select>) <select>
+<option>Logical Operator</option>
+<option>&&</option>
+<option>||</option>
+<option>!</option>
+<option>,</option>
+</select> (name3 <select>
+<option>Relational and Equality Operator</option>
+<option>&lt;=</option>
+<option>&gt;=</option>
+<option>==</option>
+<option>!=</option>
+</select> <select>
+<option>name4</option>
+<option>num2</option>
+</select>));</td>
+
+</tr>
+<tr>
+<td id = "No_Wrap">for ()
+{
+
+}</td>
+<td align = "center">for Loop</td>
+<td id = "No_Wrap">for (name1 = <select>
+<option>name2</option>
+<option>num1</option>
+</select>; name1 <select>
+<option>Relational and Equality Operator</option>
+<option>&lt;=</option>
+<option>&gt;=</option>
+<option>==</option>
+<option>!=</option>
+</select> <select>
+<option>name3</option>
+<option>num2</option>
+</select>; <select>
+<option>increment++</option>
+<option>++increment</option>
+<option>increment+=num1</option>
+<option>decrement--</option>
+<option>decrement-=num1</option>
+<option>--decrement</option>
+</select>)
+{
+// Do Your Codes Here
+}</td>
+<td>&rArr;&nbsp;Used to loop a statement simultaneously if the argument is false and adds the increment or decrement variable to the initialize variable to make the arguments true and make the loop terminated or use only the increment or decrement variable to the initialize variable to loop the statement continuously until the agreement becomes true.</td>
+</tr>
+<tr>
+<td id = "No_Wrap">switch ()
+{
+case " ":
+break;
+
+case " ":
+break;
+
+default:
+break;
+}
+
+
+or
+
+
+switch ()
+{
+case ' ':
+break;
+
+case ' ':
+break;
+
+default:
+break;
+}
+
+
+or
+
+
+switch ()
+{
+case ():
+break;
+
+case ():
+break;
+
+default:
+break;
+}</td>
+<td align = "center">switch Statement</td>
+<td id = "No_Wrap">switch (name)
+{
+case "characters or letters1":
+// Do Your Codes Here
+break;
+
+case "characters or letters2":
+// Do Your Codes Here
+break;
+
+default:
+// Do Your Codes Here
+break;
+}
+
+
+or
+
+
+switch (name)
+{
+case 'character or letter1':
+// Do Your Codes Here
+break;
+
+case 'character or letter2':
+// Do Your Codes Here
+break;
+
+default:
+// Do Your Codes Here
+break;
+}
+
+
+or
+
+
+switch (name)
+{
+case (mathematical operation1):
+// Do Your Codes Here
+break;
+
+case (mathematical operation2):
+// Do Your Codes Here
+break;
+
+default:
+// Do Your Codes Here
+break;
+}</td>
+<td>&rArr;&nbsp;Used to get the name of the code declared by the programmer and get it by <b>switch Statement</b> to use and run the inside features of that statement. The <i>switch Statement</i> is just like an <i>if-else Statement</i>. If the first <i>case condition</i> is true, it will run its content code(s) or program. If the first <i>case condition</i> is false, the second <i>case condition</i> will be use to run a program. If it is false again, it will find the <i>case condition</i> to make a statement true to run a program. If all <i>case condition</i> is false, it will fall to <i>default condition</i>. The <b>break Statement</b> is required in each <i>case condition</i> except <i>default condition</i>. If the <i>case condition</i> does not meet the requirement, all <i>case condition</i> not having <i>break Statement</i> will make as one <i>case condition</i> until it reaches a condition that uses a <i>break Statement</i>. If not, the program will flow continously without having that statement until it reaches a <i>default condition</i>.<br/>
+<br/>
+For the symbols of ' ' and " ":
+<ul type = "circle">
+<li>' ' means one character or letter can be declared in a <i>case condition</i> that is based in a <i>char data type</i>.</li><br/>
+<li>" " means two or more characters or words can be declared in a <i>case condition</i> that is based in a <i>string declaration</i>.</li>
+</ul></td>
+</tr>
+
+
+<tr>
+<td colspan = "4"><br/><br/></td>
+</tr>
+
+
+<tr>
+<th colspan = "4">Statements that Do Not Control the Flow of the Program</th>
+</tr>
+<tr>
+<th>C++ Code(s)</th>
+<th>Name</th>
+<th>Syntax</th>
+<th>Definition</th>
+</tr>
+<tr align = "center">
+<td id = "No_Wrap">//</td>
+<td>Line Comment</td>
+<td id = "No_Wrap">// User Defined Message</td>
+<td rowspan = "2" align = "left">&rArr;&nbsp;Used to place any message on the program without displaying any output about your message.</td>
+</tr>
+<tr align = "center">
+<td id = "No_Wrap">/* */</td>
+<td>Block Comment</td>
+<td id = "No_Wrap">/* User Defined Message */</td>
+
+</tr>
+</table>
+
+</body>
+</html>

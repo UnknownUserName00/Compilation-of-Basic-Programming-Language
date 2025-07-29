@@ -1,0 +1,89 @@
+<! DOCTYPE html>
+<head>
+    <title>Basic SQL Programming</title>
+
+    <style>
+        body {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<h1 align = "center">Welcome to Basic SQL Programming</h1>
+<p align = "center">
+The main definition of <b><font color = "Green" size = "5">SQL</font></b> is <b><font color = "Blue" size = "5">S</font>tandard <font color = "Blue" size = "5">Q</font>uery <font color = "Blue" size = "5">L</font>anguage</b>.
+</p>
+<pre>
+CREATE DATABASE `databaseName1`;
+
+SELECT DATABASE `databaseName1`;
+
+CREATE TABLE `databaseTableName1` (
+  `databaseColumn1Id` int(255) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  `databaseColumn1Name1` varchar(535) NOT NULL,
+  `databaseColumn1Date1` date NOT NULL,
+  `databaseColumn1Num1` decimal(65,2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `databaseTableName2` (
+  `databaseColumn2Id` int(255) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  `databaseColumn2Name1` varchar(535) NOT NULL,
+  `databaseColumn2Date1` date NOT NULL,
+  `databaseColumn2Num1` decimal(65,2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `databaseTableName3` (
+  `databaseColumn3Id` int(255) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  `databaseColumn3Name1` varchar(535) NOT NULL,
+  `databaseColumn3Date1` date NOT NULL,
+  `databaseColumn3Num1` decimal(65,2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `databaseTableName1` (`databaseColumn1Id`, `databaseColumn1Name1`, `databaseColumn1Date1`, `databaseColumn1Num1`) VALUES
+(1, '', '', 0),
+(2, 'userDefinedName1', '2019-04-30', 100),
+(3, 'userDefinedName2', '2020-05-01', 200);
+
+ALTER TABLE `databaseTableName2`
+  ADD KEY `databaseColumn1IdFK` (`databaseColumn1Id`)
+    CONSTRAINT `databaseColumn1IdFK`
+    FOREIGN KEY (`databaseColumn1Id`)
+    REFERENCES `databaseTableName1` (`databaseColumn1Id`),
+
+  ADD KEY `databaseColumn3FK` (`databaseColumn3Id`)
+    CONSTRAINT `databaseColumn3IdFK`
+    FOREIGN KEY (`databaseColumn3Id`)
+    REFERENCES `databaseTableName3` (`databaseColumn3Id`);
+
+ALTER TABLE `databaseTableName1`
+  MODIFY `databaseColumn1Id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+SELECT * FROM databaseTableName1
+  WHERE databaseColumnName1 = '$userDefinedUserName'
+  AND databaseColumnName2 != ''
+  ORDER BY databaseColumnId ASC;
+
+SELECT * FROM databaseTableName1
+  INNER JOIN databaseTableName2
+  ON databaseTableName1.databaseColumnId = databaseTableName2.databaseColumnId
+  WHERE databaseTableName1.databaseColumnName1 = '$userDefinedUserName'
+  AND databaseTableName2.databaseColumnName2 != ''
+  AND databaseTableName1.databaseColumnNum1 != -databaseTableName2.databaseColumnNum1
+  GROUP BY YEAR(databaseColumnSales.databaseColumnDate), MONTH(databaseColumnSales.databaseColumnDate), DATE(databaseColumnSales.databaseColumnDate)
+  ORDER BY databaseTableName1.databaseColumnId DESC;
+
+SELECT DISTINCT(databaseColumnName) FROM databaseTableName;
+
+SELECT SUM(databaseColumnNum) FROM databaseTableName;
+
+UPDATE databaseTableName
+  SET databaseColumnName1 = '$userDefinedName1'
+  WHERE databaseColumnUserName = '$userDefinedUserName';
+
+DELETE FROM databaseTableName
+  WHERE databaseColumnId = '$userDefinedColumnId';
+
+DROP DATABASE `databaseName1`;
+</pre>
+</body>
+</html>

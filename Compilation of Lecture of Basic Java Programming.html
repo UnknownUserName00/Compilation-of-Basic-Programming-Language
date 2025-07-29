@@ -1,0 +1,3531 @@
+<html>
+<head>
+<title>Basic Java Programming Language</title>
+<style>
+body {
+    display: inline-block;
+}
+</style>
+<body>
+
+<h1 align = "center">Welcome to Basic Java Programming</h1>
+<h2 align = "center">(for Machine Language)</h2>
+<br/>
+<br/>
+<h3 align = "left">Basic Start of Java Programming</h3>
+<pre>&larr; Start <font color = "mediumblue">import</font> PackageName.*; Here &rarr;
+<font color = "mediumblue">public class</font> Class_Name
+{
+<font color = "mediumblue">public static void</font> main(String args[])
+{
+
+&larr; Start Your Code(s) Here &rarr;
+
+}
+}</pre>
+<br/>
+<br/>
+<h3 align = "left">File Format of a Java Class File
+(when you save the file)</h3>
+<pre><font color = "redorange">unknown
+Needs a special software program temporarily to practice the Basic Java Programming Language.
+One of the special software program is NetBeans IDE.</font></pre>
+<br/>
+<br/>
+<br/>
+<br/>
+<table border = "2" align = "center">
+<tr>
+<th colspan = "2">Definition of Basic Syntax Preparation of a Blank Java Class File</th>
+</tr>
+<tr>
+<th>Java Code(s)</th>
+<th>Definition</th>
+</tr>
+<tr>
+<td><pre><font color = "mediumblue">public class</font> Class_Name
+{
+
+}</pre></td>
+<td>&rArr;&nbsp;<font color = "redorange">unknown</font></td>
+</tr>
+<tr>
+<td><pre><font color = "mediumblue">public static void</font> main(String args[])
+{
+
+}</pre></td>
+<td>&rArr;&nbsp;Heading of the method main.</td>
+</tr>
+</table>
+
+
+<p>
+<br/><br/>
+</p>
+
+
+<table border = "2" align = "center">
+<tr>
+<th colspan = "4">Some of the Basic Codes of Java Programming</th>
+</tr>
+<tr>
+<th colspan = "4">Input/Output Statements</th>
+</tr>
+<tr>
+<th>Java Code(s)</th>
+<th>Syntax</th>
+<th>Definition</th>
+<th><pre><font color = "mediumblue">import</font> PackageName.*;</pre></th>
+</tr>
+<tr align = "center">
+<td><pre>System.out.print();</pre></td>
+<td><pre><select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select></pre></td>
+<td align = "left">&rArr;&nbsp;Leaves the insertion point after the last character of
+the value of expression.</td>
+<td rowspan = "3" align = "center">none</td>
+</tr>
+<tr align = "center">
+<td><pre>System.out.println();</pre></td>
+<td><pre><select>
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + non>
+;</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select></pre></td>
+<td align = "left">&rArr;&nbsp;Positions the insertion point at the beginning of the next line.</td>
+
+</tr>
+<tr align = "center">
+<td><pre>System.out.printf();</pre></td>
+<td><pre><select>
+<option>System.out.printf(name);</option>
+<option>System.out.printf(name + ....nameF);</option>
+<option>System.out.printf(num);</option>
+<option>System.out.printf(num + ....numF);</option>
+<option>System.out.printf(name + num);</option>
+<option>System.out.printf(name + num + ....nameF + ....numF);</option>
+<option>System.out.printf("User Defined Message");</option>
+<option>System.out.printf("User Defined Message", name);</option>
+<option>System.out.prinf("User Defined Message", (name + ....nameF));</option>
+<option>System.out.prinf("User Defined Message", num);</option>
+<option>System.out.printf("User Defined Message", (num + ....numF));</option>
+<option>System.out.printf("User Defined Message", (name + num));</option>
+<option>System.out.printf("User Defined Message", (name + num + ....nameF + ....numF));</option>
+</select></pre></td>
+<td align = "left">&rArr;&nbsp;It is use only if you declare a primitive data type double and it is must match with the expression that you will place under <i>System.out.printf();</i>.<br/>
+<br/>
+&rArr;&nbsp;Java Version Compatibility: Java 5.0 and above</td>
+
+</tr>
+<tr align = "center">
+<td><pre>JOptionPane.showInputDialog();</pre></td>
+<td><pre><select>
+<option>JOptionPane.showInputDialog(name);</option>
+<option>JOptionPane.showInputDialog(name + ....nameF);</option>
+<option>JOptionPane.showInputDialog(num);</option>
+<option>JOptionPane.showInputDialog(num + ....numF);</option>
+<option>JOptionPane.showInputDialog(name + num);</option>
+<option>JOptionPane.showInputDialog(name + num + ....nameF + ....numF);</option>
+<option>JOptionPane.showInputDialog("User Defined Message");</option>
+<option>JOptionPane.showInputDialog("User Defined Message"+ name);</option>
+<option>JOptionPane.showInputDialog("User Defined Message"+ (name + ....nameF));</option>
+<option>JOptionPane.showInputDialog("User Defined Message"+ num);</option>
+<option>JOptionPane.showInputDialog("User Defined Message"+ (num + ....numF));</option>
+<option>JOptionPane.showInputDialog("User Defined Message"+ (name + num));</option>
+<option>JOptionPane.showInputDialog("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select></pre></td>
+<td align = "left">&rArr;&nbsp;Allows the user to input a string from the keyboard.</td>
+<td rowspan = "2" align = "center"><pre><font color = "mediumblue">import</font> javax.swing.JOptionPane;</pre></td>
+</tr>
+<tr align = "center">
+<td><pre>JOptionPane.showMessageDialog();</pre></td>
+<td><pre><select>
+<option>JOptionPane.showMessageDialog(null, name);</option>
+<option>JOptionPane.showMessageDialog(null, name + ....nameF);</option>
+<option>JOptionPane.showMessageDialog(null, num);</option>
+<option>JOptionPane.showMessageDialog(null, num + ....numF);</option>
+<option>JOptionPane.showMessageDialog(null, name + num);</option>
+<option>JOptionPane.showMessageDialog(null, name + num + ....nameF + ....numF);</option>
+<option>JOptionPane.showMessageDialog(null, "User Defined Message");</option>
+<option>JOptionPane.showMessageDialog(null, "User Defined Message"+ name);</option>
+<option>JOptionPane.showMessageDialog(null, "User Defined Message"+ (name + ....nameF));</option>
+<option>JOptionPane.showMessageDialog(null, "User Defined Message"+ num);</option>
+<option>JOptionPane.showMessageDialog(null, "User Defined Message"+ (num + ....numF));</option>
+<option>JOptionPane.showMessageDialog(null, "User Defined Message"+ (name + num));</option>
+<option>JOptionPane.showMessageDialog(null, "User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select></pre></td>
+<td align = "left">&rArr;&nbsp;Allows the programmer to display the results.</td>
+</tr>
+<tr align = "center">
+<td><pre>String.format();</pre></td>
+<td><pre><select>
+<option>String.format(name);</option>
+<option>String.format(name + ....nameF);</option>
+<option>String.format(num);</option>
+<option>String.format(num + ....numF);</option>
+<option>String.format(name + num);</option>
+<option>String.format(name + num + ....nameF + ....numF);</option>
+<option>String.format("User Defined Message");</option>
+<option>String.format("User Defined Message", name);</option>
+<option>String.format("User Defined Message", (name + ....nameF));</option>
+<option>String.format("User Defined Message", num);</option>
+<option>String.format("User Defined Message", (num + ....numF));</option>
+<option>String.format("User Defined Message", (name + num));</option>
+<option>String.format("User Defined Message", (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.print(String.format(name));</option>
+<option>System.out.print(String.format(name + ....nameF));</option>
+<option>System.out.print(String.format(num));</option>
+<option>System.out.print(String.format(num + ....numF));</option>
+<option>System.out.print(String.format(name + num));</option>
+<option>System.out.print(String.format(name + num + ....nameF + ....numF));</option>
+<option>System.out.print(String.format("User Defined Message"));</option>
+<option>System.out.print(String.format("User Defined Message", name));</option>
+<option>System.out.print(String.format("User Defined Message", (name + ....nameF)));</option>
+<option>System.out.print(String.format("User Defined Message", num));</option>
+<option>System.out.print(String.format("User Defined Message", (num + ....numF)));</option>
+<option>System.out.print(String.format("User Defined Message", (name + num)));</option>
+<option>System.out.print(String.format("User Defined Message", (name + num + ....nameF + ....numF)));</option>
+
+<option>System.out.println(String.format(name));</option>
+<option>System.out.println(String.format(name + ....nameF));</option>
+<option>System.out.println(String.format(num));</option>
+<option>System.out.println(String.format(num + ....numF));</option>
+<option>System.out.println(String.format(name + num));</option>
+<option>System.out.println(String.format(name + num + ....nameF + ....numF));</option>
+<option>System.out.println(String.format("User Defined Message"));</option>
+<option>System.out.println(String.format("User Defined Message", name));</option>
+<option>System.out.println(String.format("User Defined Message", (name + ....nameF)));</option>
+<option>System.out.println(String.format("User Defined Message", num));</option>
+<option>System.out.println(String.format("User Defined Message", (num + ....numF)));</option>
+<option>System.out.println(String.format("User Defined Message", (name + num)));</option>
+<option>System.out.println(String.format("User Defined Message", (name + num + ....nameF + ....numF)));</option>
+
+<option>JOptionPane.showInputDialog(String.format(name));</option>
+<option>JOptionPane.showInputDialog(String.format(name + ....nameF));</option>
+<option>JOptionPane.showInputDialog(String.format(num));</option>
+<option>JOptionPane.showInputDialog(String.format(num + ....numF));</option>
+<option>JOptionPane.showInputDialog(String.format(name + num));</option>
+<option>JOptionPane.showInputDialog(String.format(name + num + ....nameF + ....numF));</option>
+<option>JOptionPane.showInputDialog(String.format("User Defined Message"));</option>
+<option>JOptionPane.showInputDialog(String.format("User Defined Message", name));</option>
+<option>JOptionPane.showInputDialog(String.format("User Defined Message", (name + ....nameF)));</option>
+<option>JOptionPane.showInputDialog(String.format("User Defined Message", num));</option>
+<option>JOptionPane.showInputDialog(String.format("User Defined Message", (num + ....numF)));</option>
+<option>JOptionPane.showInputDialog(String.format("User Defined Message", (name + num)));</option>
+<option>JOptionPane.showInputDialog(String.format("User Defined Message", (name + num + ....nameF + ....numF)));</option>
+
+<option>JOptionPane.showMessageDialog(null, String.format(name));</option>
+<option>JOptionPane.showMessageDialog(null, String.format(name + ....nameF));</option>
+<option>JOptionPane.showMessageDialog(null, String.format(num));</option>
+<option>JOptionPane.showMessageDialog(null, String.format(num + ....numF));</option>
+<option>JOptionPane.showMessageDialog(null, String.format(name + num));</option>
+<option>JOptionPane.showMessageDialog(null, String.format(name + num + ....nameF + ....numF));</option>
+<option>JOptionPane.showMessageDialog(null, String.format("User Defined Message"));</option>
+<option>JOptionPane.showMessageDialog(null, String.format("User Defined Message", name));</option>
+<option>JOptionPane.showMessageDialog(null, String.format("User Defined Message", (name + ....nameF)));</option>
+<option>JOptionPane.showMessageDialog(null, String.format("User Defined Message", num));</option>
+<option>JOptionPane.showMessageDialog(null, String.format("User Defined Message", (num + ....numF)));</option>
+<option>JOptionPane.showMessageDialog(null, String.format("User Defined Message", (name + num)));</option>
+<option>JOptionPane.showMessageDialog(null, String.format("User Defined Message", (name + num + ....nameF + ....numF)));</option>
+</select></pre></td>
+<td align = "left">&rArr;&nbsp;The same as in the method <i>printf</i>. The value of the expression is a formatted string.</td>
+<td><pre>from JOptionPane: <font color = "mediumblue">import</font> javax.swing.JOptionPane;</pre></td>
+</tr>
+<tr align = "left">
+<th colspan = "4">Note:<br/>
+JOptionPane &rArr;&nbsp;Allows you to easily create dialog boxes for input and output.</th>
+</tr>
+
+
+<tr>
+<td colspan = "4"><br/><br/></td>
+</tr>
+
+
+<tr>
+<th colspan = "4">Codes that Accepts or Change the Input Data for the Program</th>
+</tr>
+<tr>
+<th colspan = "4">(for System.out.print();, System.out.println();, System.out.printf();)</th>
+</tr>
+<tr>
+<th>Java Code(s)</th>
+<th>Syntax</th>
+<th>Definition</th>
+<th><pre><font color = "mediumblue">import</font> PackageName.*;
+(from Scanner <font color = "mediumblue">class</font>)</pre></th>
+</tr>
+<tr align = "center">
+<td><pre><select>
+<option>input</option>
+<option>console</option>
+<option>inFile</option>
+</select>.nextInt();</pre></td>
+<td align = "left"><pre>Scanner input = <font color = "mediumblue">new</font> Scanner(System.in);
+
+<font color = "mediumblue">int</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = input.nextInt();
+
+
+or
+
+
+Scanner console = <font color = "mediumblue">new</font> Scanner(System.in);
+
+<font color = "mediumblue">int</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = console.nextInt();
+
+
+or
+
+
+Scanner inFile = <font color = "mediumblue">new</font> Scanner(<font color = "mediumblue">new</font> FileReader("prog.dat"));
+
+<font color = "mediumblue">int</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = inFile.nextInt();</pre></td>
+<td align = "left">&rArr;&nbsp;Interprets the next input token into an integer.</td>
+<td rowspan = "15"><pre><font color = "mediumblue">import</font> java.util.Scanner;</pre></td>
+</tr>
+<tr align = "center">
+<td><pre><select>
+<option>input</option>
+<option>console</option>
+<option>inFile</option>
+</select>.nextByte();</pre></td>
+<td align = "left"><pre>Scanner input = <font color = "mediumblue">new</font> Scanner(System.in);
+
+<font color = "mediumblue">byte</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = input.nextByte();
+
+
+or
+
+
+Scanner console = <font color = "mediumblue">new</font> Scanner(System.in);
+
+<font color = "mediumblue">byte</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = console.nextByte();
+
+
+or
+
+
+Scanner inFile = <font color = "mediumblue">new</font> Scanner(<font color = "mediumblue">new</font> FileReader("prog.dat"));
+
+<font color = "mediumblue">byte</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = inFile.nextByte();</pre></td>
+<td align = "left">&rArr;&nbsp;Interprets the next input token into a byte number.</td>
+
+</tr>
+<tr align = "center">
+<td><pre><select>
+<option>input</option>
+<option>console</option>
+<option>inFile</option>
+</select>.nextShort();</pre></td>
+<td align = "left"><pre>Scanner input = <font color = "mediumblue">new</font> Scanner(System.in);
+
+<font color = "mediumblue">short</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = input.nextShort();
+
+
+or
+
+
+Scanner console = <font color = "mediumblue">new</font> Scanner(System.in);
+
+<font color = "mediumblue">short</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = console.nextShort();
+
+
+or
+
+
+Scanner inFile = <font color = "mediumblue">new</font> Scanner(new FileReader("prog.dat"));
+
+<font color = "mediumblue">short</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = inFile.nextShort();</pre></td>
+<td align = "left">&rArr;&nbsp;Interprets the next input token into a short number.</td>
+
+</tr>
+<tr align = "center">
+<td><pre><select>
+<option>input</option>
+<option>console</option>
+<option>inFile</option>
+</select>.nextLong();</pre></td>
+<td align = "left"><pre>Scanner input = <font color = "mediumblue">new</font> Scanner(System.in);
+
+<font color = "mediumblue">long</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = input.nextLong();
+
+
+or
+
+
+Scanner console = <font color = "mediumblue">new</font> Scanner(System.in);
+
+<font color = "mediumblue">long</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = console.nextLong();
+
+
+or
+
+
+Scanner inFile = <font color = "mediumblue">new</font> Scanner(<font color = "mediumblue">new</font> FileReader("prog.dat"));
+
+<font color = "mediumblue">long</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = inFile.nextLong();</pre></td>
+<td align = "left">&rArr;&nbsp;Interprets the next input token into a long number.</td>
+
+</tr>
+<tr align = "center">
+<td><pre><select>
+<option>input</option>
+<option>console</option>
+<option>inFile</option>
+</select>.nextFloat();</pre></td>
+<td align = "left"><pre>Scanner input = <font color = "mediumblue">new</font> Scanner(System.in);
+
+<font color = "mediumblue">float</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = input.nextFloat();
+
+
+or
+
+
+Scanner console = <font color = "mediumblue">new</font> Scanner(System.in);
+
+<font color = "mediumblue">float</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = console.nextFloat();
+
+
+or
+
+
+Scanner inFile = <font color = "mediumblue">new</font> Scanner(<font color = "mediumblue">new</font> FileReader("prog.dat"));
+
+<font color = "mediumblue">float</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = inFile.nextFloat();</pre></td>
+<td rowspan = "2" align = "left">&rArr;&nbsp;Interprets the next input token into a floating-point number.</td>
+
+</tr>
+<tr align = "center">
+<td><pre><select>
+<option>input</option>
+<option>console</option>
+<option>inFile</option>
+</select>.nextDouble();</pre></td>
+<td align = "left"><pre>Scanner input = <font color = "mediumblue">new</font> Scanner(System.in);
+
+<font color = "mediumblue">double</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.printf(name);</option>
+<option>System.out.printf(name + ....nameF);</option>
+<option>System.out.printf(num);</option>
+<option>System.out.printf(num + ....numF);</option>
+<option>System.out.printf(name + num);</option>
+<option>System.out.printf(name + num + ....nameF + ....numF);</option>
+<option>System.out.printf("User Defined Message");</option>
+<option>System.out.printf("User Defined Message", name);</option>
+<option>System.out.prinf("User Defined Message", (name + ....nameF));</option>
+<option>System.out.prinf("User Defined Message", num);</option>
+<option>System.out.printf("User Defined Message", (num + ....numF));</option>
+<option>System.out.printf("User Defined Message", (name + num));</option>
+<option>System.out.printf("User Defined Message", (name + num + ....nameF + ....numF));</option>
+</select>
+name = input.nextDouble();
+
+
+or
+
+
+Scanner console = <font color = "mediumblue">new</font> Scanner(System.in);
+
+<font color = "mediumblue">double</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.printf(name);</option>
+<option>System.out.printf(name + ....nameF);</option>
+<option>System.out.printf(num);</option>
+<option>System.out.printf(num + ....numF);</option>
+<option>System.out.printf(name + num);</option>
+<option>System.out.printf(name + num + ....nameF + ....numF);</option>
+<option>System.out.printf("User Defined Message");</option>
+<option>System.out.printf("User Defined Message", name);</option>
+<option>System.out.prinf("User Defined Message", (name + ....nameF));</option>
+<option>System.out.prinf("User Defined Message", num);</option>
+<option>System.out.printf("User Defined Message", (num + ....numF));</option>
+<option>System.out.printf("User Defined Message", (name + num));</option>
+<option>System.out.printf("User Defined Message", (name + num + ....nameF + ....numF));</option>
+</select>
+name = console.nextDouble();
+
+
+or
+
+
+Scanner inFile = <font color = "mediumblue">new</font> Scanner(<font color = "mediumblue">new</font> FileReader("prog.dat"));
+
+<font color = "mediumblue">double</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.printf(name);</option>
+<option>System.out.printf(name + ....nameF);</option>
+<option>System.out.printf(num);</option>
+<option>System.out.printf(num + ....numF);</option>
+<option>System.out.printf(name + num);</option>
+<option>System.out.printf(name + num + ....nameF + ....numF);</option>
+<option>System.out.printf("User Defined Message");</option>
+<option>System.out.printf("User Defined Message", name);</option>
+<option>System.out.prinf("User Defined Message", (name + ....nameF));</option>
+<option>System.out.prinf("User Defined Message", num);</option>
+<option>System.out.printf("User Defined Message", (num + ....numF));</option>
+<option>System.out.printf("User Defined Message", (name + num));</option>
+<option>System.out.printf("User Defined Message", (name + num + ....nameF + ....numF));</option>
+</select>
+name = inFile.nextDouble();</pre></td>
+
+
+</tr>
+<tr align = "center">
+<td><pre><select>
+<option>input</option>
+<option>console</option>
+<option>inFile</option>
+</select>.next();</pre></td>
+<td align = "left"><pre>Scanner input = <font color = "mediumblue">new</font> Scanner(System.in);
+
+String <select>
+<option>name;</option>
+<option>name = "letter(s), word(s) or symbol(s)";</option>
+<option>name, ....nameF;</option>
+<option>name = "letter(s), word(s) or symbol(s)", ....nameF = "letter(s), word(s) or symbol(s)";</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = input.next();
+
+
+or
+
+
+Scanner console = <font color = "mediumblue">new</font> Scanner(System.in);
+
+String <select>
+<option>name;</option>
+<option>name = "letter(s), word(s) or symbol(s)";</option>
+<option>name, ....nameF;</option>
+<option>name = "letter(s), word(s) or symbol(s)", ....nameF = "letter(s), word(s) or symbol(s)";</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = console.next();
+
+
+or
+
+
+Scanner inFile = <font color = "mediumblue">new</font> Scanner(<font color = "mediumblue">new</font> FileReader("prog.dat"));
+
+String <select>
+<option>name;</option>
+<option>name = "letter(s), word(s) or symbol(s)";</option>
+<option>name, ....nameF;</option>
+<option>name = "letter(s), word(s) or symbol(s)", ....nameF = "letter(s), word(s) or symbol(s)";</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = inFile.next();</pre></td>
+<td align = "left">&rArr;&nbsp;Interprets the next input token into a string.</td>
+
+</tr>
+<tr align = "center">
+<td><pre><select>
+<option>input</option>
+<option>console</option>
+<option>inFile</option>
+</select>.nextLine();</pre></td>
+<td align = "left"><pre>Scanner input = <font color = "mediumblue">new</font> Scanner(System.in);
+
+String <select>
+<option>name;</option>
+<option>name = "letter(s), word(s) or symbol(s)";</option>
+<option>name, ....nameF;</option>
+<option>name = "letter(s), word(s) or symbol(s)", ....nameF = "letter(s), word(s) or symbol(s)";</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = input.nextLine();
+
+
+or
+
+
+Scanner console = <font color = "mediumblue">new</font> Scanner(System.in);
+
+String <select>
+<option>name;</option>
+<option>name = "letter(s), word(s) or symbol(s)";</option>
+<option>name, ....nameF;</option>
+<option>name = "letter(s), word(s) or symbol(s)", ....nameF = "letter(s), word(s) or symbol(s)";</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = console.nextLine();
+
+
+or
+
+
+Scanner inFile = <font color = "mediumblue">new</font> Scanner(<font color = "mediumblue">new</font> FileReader("prog.dat"));
+
+String <select>
+<option>name;</option>
+<option>name = "letter(s), word(s) or symbol(s)";</option>
+<option>name, ....nameF;</option>
+<option>name = "letter(s), word(s) or symbol(s)", ....nameF = "letter(s), word(s) or symbol(s)";</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = inFile.nextLine();</pre></td>
+<td align = "left">&rArr;&nbsp;Interprets the next input token or the next input line into a string until the end of the line.</td>
+
+</tr>
+<tr align = "center">
+<td><pre><select>
+<option>input</option>
+<option>console</option>
+<option>inFile</option>
+</select>.next().charAt();</pre></td>
+<td align = "left"><pre>Scanner input = <font color = "mediumblue">new</font> Scanner(System.in);
+
+<font color = "mediumblue">char</font> <select>
+<option>name;</option>
+<option>name = 'letter, word or symbol'</option>
+<option>name, ....nameF;</option>
+<option>name = 'letter, word or symbol', ....nameF = 'letter, word or symbol'</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = input.next().charAt(num);
+
+
+or
+
+
+Scanner console = <font color = "mediumblue">new</font> Scanner(System.in);
+
+<font color = "mediumblue">char</font> <select>
+<option>name;</option>
+<option>name = 'letter, word or symbol'</option>
+<option>name, ....nameF;</option>
+<option>name = 'letter, word or symbol', ....nameF = 'letter, word or symbol'</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = console.next().charAt(num);
+
+
+or
+
+
+Scanner inFile = <font color = "mediumblue">new</font> Scanner(<font color = "mediumblue">new</font> FileReader("prog.dat"));
+
+<font color = "mediumblue">char</font> <select>
+<option>name;</option>
+<option>name = 'letter, word or symbol'</option>
+<option>name, ....nameF;</option>
+<option>name = 'letter, word or symbol', ....nameF = 'letter, word or symbol'</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = inFile.next().charAt(num);</pre></td>
+<td align = "left">&rArr;&nbsp;Interprets the next input token into a character.</td>
+
+</tr>
+<tr align = "center">
+<td><pre><select>
+<option>input</option>
+<option>console</option>
+<option>inFile</option>
+</select>.nextLine().charAt();</pre></td>
+<td align = "left"><pre>Scanner input = <font color = "mediumblue">new</font> Scanner(System.in);
+
+<font color = "mediumblue">char</font> <select>
+<option>name;</option>
+<option>name = 'letter, word or symbol'</option>
+<option>name, ....nameF;</option>
+<option>name = 'letter, word or symbol', ....nameF = 'letter, word or symbol'</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = input.nextLine().charAt(num);
+
+
+or
+
+
+Scanner console = <font color = "mediumblue">new</font> Scanner(System.in);
+
+<font color = "mediumblue">char</font> <select>
+<option>name;</option>
+<option>name = 'letter, word or symbol'</option>
+<option>name, ....nameF;</option>
+<option>name = 'letter, word or symbol', ....nameF = 'letter, word or symbol'</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = console.nextLine().charAt(num);
+
+
+or
+
+
+Scanner inFile = <font color = "mediumblue">new</font> Scanner(<font color = "mediumblue">new</font> FileReader("prog.dat"));
+
+<font color = "mediumblue">char</font> <select>
+<option>name;</option>
+<option>name = 'letter, word or symbol'</option>
+<option>name, ....nameF;</option>
+<option>name = 'letter, word or symbol', ....nameF = 'letter, word or symbol'</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = inFile.nextLine().charAt(num);</pre></td>
+<td align = "left">&rArr;&nbsp;Interprets the next input token or the next input line into a character until the end of the line.</td>
+
+</tr>
+<tr align = "center">
+<td><pre><select>
+<option>outFile.out.print()</option>
+<option>outFile.out.println()</option>
+</select>.charAt();</pre></td>
+<td align = "left"><pre>PrintWriter outFile = <font color = "mediumblue">new</font> PrintWriter("prog.out");
+
+outFile.<select>
+<option>out.print("User Defined Message")</option>
+<option>out.println("User Defined Message")</option>
+</select>.charAt(num);</pre></td>
+<td align = "left">&rArr;&nbsp;Interprets the input token into a character.</td>
+
+</tr>
+<tr align = "center">
+<td><pre><select>
+<option>input</option>
+<option>console</option>
+<option>inFile</option>
+</select>.nextBoolean();</pre></td>
+<td align = "left"><pre>Scanner input = <font color = "mediumblue">new</font> Scanner(System.in);
+
+<font color = "mediumblue">boolean</font> <select>
+<option>name;</option>
+<option>name = Boolean_Value;</option>
+<option>name, ....nameF;</option>
+<option>name = Boolean_Value, ....nameF = Boolean_Value;</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = input.nextBoolean();
+
+
+or
+
+
+Scanner console = <font color = "mediumblue">new</font> Scanner(System.in);
+
+<font color = "mediumblue">boolean</font> <select>
+<option>name;</option>
+<option>name = Boolean_Value;</option>
+<option>name, ....nameF;</option>
+<option>name = Boolean_Value, ....nameF = Boolean_Value;</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = console.nextBoolean();
+
+
+or
+
+
+Scanner inFile = <font color = "mediumblue">new</font> Scanner(<font color = "mediumblue">new</font> FileReader("prog.dat"));
+
+<font color = "mediumblue">boolean</font> <select>
+<option>name;</option>
+<option>name = Boolean_Value;</option>
+<option>name, ....nameF;</option>
+<option>name = Boolean_Value, ....nameF = Boolean_Value;</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = inFile.nextBoolean();</pre></td>
+<td align = "left">&rArr;&nbsp;Interprets the next input token into a boolean value.</td>
+
+</tr>
+
+<tr>
+<td colspan = "3"><br/></td>
+</tr>
+
+<tr align = "center">
+<td><pre>inFile.close();</pre></td>
+<td align = "left"><pre>Scanner inFile = <font color = "mediumblue">new</font> Scanner(new FileReader("prog.dat"));
+
+<font color = "mediumblue">int</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = inFile.nextInt();
+
+inFile.close();
+
+
+or
+
+
+<font color = "mediumblue">byte</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = inFile.nextByte();
+
+inFile.close();
+
+
+or
+
+
+<font color = "mediumblue">short</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = inFile.nextShort();
+
+inFile.close();
+
+
+or
+
+
+<font color = "mediumblue">long</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = inFile.nextLong();
+
+inFile.close();
+
+
+or
+
+
+<font color = "mediumblue">float</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = inFile.nextFloat();
+
+inFile.close();
+
+
+or
+
+
+<font color = "mediumblue">double</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.printf(name);</option>
+<option>System.out.printf(name + ....nameF);</option>
+<option>System.out.printf(num);</option>
+<option>System.out.printf(num + ....numF);</option>
+<option>System.out.printf(name + num);</option>
+<option>System.out.printf(name + num + ....nameF + ....numF);</option>
+<option>System.out.printf("User Defined Message");</option>
+<option>System.out.printf("User Defined Message", name);</option>
+<option>System.out.prinf("User Defined Message", (name + ....nameF));</option>
+<option>System.out.prinf("User Defined Message", num);</option>
+<option>System.out.printf("User Defined Message", (num + ....numF));</option>
+<option>System.out.printf("User Defined Message", (name + num));</option>
+<option>System.out.printf("User Defined Message", (name + num + ....nameF + ....numF));</option>
+</select>
+name = inFile.nextDouble();
+
+inFile.close();
+
+
+or
+
+
+<font color = "mediumblue">boolean</font> <select>
+<option>name;</option>
+<option>name = Boolean_Value;</option>
+<option>name, ....nameF;</option>
+<option>name = Boolean_Value, ....nameF = Boolean_Value;</option>
+</select>
+
+<select>
+<option>System.out.print(name);</option>
+<option>System.out.print(name + ....nameF);</option>
+<option>System.out.print(num);</option>
+<option>System.out.print(num + ....numF);</option>
+<option>System.out.print(name + num);</option>
+<option>System.out.print(name + num + ....nameF + ....numF);</option>
+<option>System.out.print("User Defined Message");</option>
+<option>System.out.print("User Defined Message"+ name);</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.print("User Defined Message"+ num);</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.print("User Defined Message"+ (name + num));</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+
+<option>System.out.println(name);</option>
+<option>System.out.println(name + ....nameF);</option>
+<option>System.out.println(num);</option>
+<option>System.out.println(num + ....numF);</option>
+<option>System.out.println(name + num);</option>
+<option>System.out.println(name + num + ....nameF + ....numF);</option>
+<option>System.out.println("User Defined Message");</option>
+<option>System.out.println("User Defined Message"+ name);</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF));</option>
+<option>System.out.println("User Defined Message"+ num);</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF));</option>
+<option>System.out.println("User Defined Message"+ (name + num));</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF));</option>
+</select>
+name = inFile.nextBoolean();
+
+inFile.close();</pre></td>
+<td align = "left">&rArr;&nbsp;It closes the input file.</td>
+
+</tr>
+<tr align = "center">
+<td><pre>outFile.close();</pre></td>
+<td align = "left"><pre>PrintWriter outFile = <font color = "mediumblue">new</font> PrintWriter("prog.out");
+
+outFile.<select>
+<option>out.print();</option>
+<option>out.println();</option>
+</select>
+
+outFile.close();</pre></td>
+<td align = "left">&rArr;&nbsp;It closes the output file.</td>
+
+</tr>
+
+<tr>
+<td colspan = "4"><br/></td>
+</tr>
+
+<tr align = "center">
+<td><pre><select>
+<option>System.out.print()</option>
+<option>System.out.println()</option>
+</select>.charAt();</pre></td>
+<td align = "left"><pre><font color = "mediumblue">char</font> <select>
+<option>name;</option>
+<option>name = 'letter, word or symbol'</option>
+<option>name, ....nameF;</option>
+<option>name = 'letter, word or symbol', ....nameF = 'letter, word or symbol'</option>
+</select>
+
+<select>
+<option>System.out.print(name)</option>
+<option>System.out.print(name + ....nameF)</option>
+<option>System.out.print(num)</option>
+<option>System.out.print(num + ....numF)</option>
+<option>System.out.print(name + num)</option>
+<option>System.out.print(name + num + ....nameF + ....numF)</option>
+<option>System.out.print("User Defined Message")</option>
+<option>System.out.print("User Defined Message"+ name)</option>
+<option>System.out.print("User Defined Message"+ (name + ....nameF))</option>
+<option>System.out.print("User Defined Message"+ num)</option>
+<option>System.out.print("User Defined Message"+ (num + ....numF))</option>
+<option>System.out.print("User Defined Message"+ (name + num))</option>
+<option>System.out.print("User Defined Message"+ (name + num + ....nameF + ....numF))</option>
+
+<option>System.out.println(name)</option>
+<option>System.out.println(name + ....nameF)</option>
+<option>System.out.println(num)</option>
+<option>System.out.println(num + ....numF)</option>
+<option>System.out.println(name + num)</option>
+<option>System.out.println(name + num + ....nameF + ....numF)</option>
+<option>System.out.println("User Defined Message")</option>
+<option>System.out.println("User Defined Message"+ name)</option>
+<option>System.out.println("User Defined Message"+ (name + ....nameF))</option>
+<option>System.out.println("User Defined Message"+ num)</option>
+<option>System.out.println("User Defined Message"+ (num + ....numF))</option>
+<option>System.out.println("User Defined Message"+ (name + num))</option>
+<option>System.out.println("User Defined Message"+ (name + num + ....nameF + ....numF))</option>
+</select>.charAt();</pre></td>
+<td align = "left">&rArr;&nbsp;Interprets the input token into a character.</td>
+<td>none</td>
+</tr>
+
+
+<tr>
+<td colspan = "4"><br/><br/></td>
+</tr>
+
+
+<tr>
+<th colspan = "4">(for JOptionPane.showInputDialog();)</th>
+</tr>
+<tr>
+<th>Java Code(s)</th>
+<th>Syntax</th>
+<th>Definition</th>
+<th><pre><font color = "mediumblue">import</font> PackageName.*;
+(from JOptionPane)</pre></th>
+</tr>
+<tr align = "center">
+<td><pre>Integer.parseInt();</pre></td>
+<td align = "left"><pre><font color = "mediumblue">int</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select>
+
+name = Integer.parseInt(<select>
+<option>JOptionPane.showInputDialog(name)</option>
+<option>JOptionPane.showInputDialog(name + ....nameF)</option>
+<option>JOptionPane.showInputDialog("User Defined Message")</option>
+<option>JOptionPane.showInputDialog("User Defined Message"+ name)</option>
+<option>JOptionPane.showInputDialog("User Defined Message"+ (name + ....nameF))</option>
+</select>);</pre></td>
+<td align = "left">&rArr;&nbsp;Interprets the input token into an integer.<br/>
+<br/>
+&rArr;&nbsp;Java Version Compatibility: Java 5.0 and above</td>
+<td rowspan = "8"><pre><font color = "mediumblue">import</font> javax.swing.JOptionPane;</pre></td>
+</tr>
+<tr align = "center">
+<td><pre>Byte.parseByte();</pre></td>
+<td align = "left"><pre><font color = "mediumblue">byte</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select>
+
+name = Byte.parseByte(<select>
+<option>JOptionPane.showInputDialog(name)</option>
+<option>JOptionPane.showInputDialog(name + ....nameF)</option>
+<option>JOptionPane.showInputDialog("User Defined Message")</option>
+<option>JOptionPane.showInputDialog("User Defined Message"+ name)</option>
+<option>JOptionPane.showInputDialog("User Defined Message"+ (name + ....nameF))</option>
+</select>);</pre></td>
+<td align = "left">&rArr;&nbsp;Interprets the input token into a byte number.<br/>
+<br/>
+&rArr;&nbsp;Java Version Compatibility: Java 5.0 and above</td>
+
+</tr>
+<tr align = "center">
+<td><pre>Short.parseShort();</pre></td>
+<td align = "left"><pre><font color = "mediumblue">short</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select>
+
+name = Short.parseShort(<select>
+<option>JOptionPane.showInputDialog(name)</option>
+<option>JOptionPane.showInputDialog(name + ....nameF)</option>
+<option>JOptionPane.showInputDialog("User Defined Message")</option>
+<option>JOptionPane.showInputDialog("User Defined Message"+ name)</option>
+<option>JOptionPane.showInputDialog("User Defined Message"+ (name + ....nameF))</option>
+</select>);</pre></td>
+<td align = "left">&rArr;&nbsp;Interprets the input token into a short number.<br/>
+<br/>
+&rArr;&nbsp;Java Version Compatibility: Java 5.0 and above</td>
+
+</tr>
+<tr align = "center">
+<td><pre>Long.parseLong();</pre></td>
+<td align = "left"><pre><font color = "mediumblue">long</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select>
+
+name = Long.parseLong(<select>
+<option>JOptionPane.showInputDialog(name)</option>
+<option>JOptionPane.showInputDialog(name + ....nameF)</option>
+<option>JOptionPane.showInputDialog("User Defined Message")</option>
+<option>JOptionPane.showInputDialog("User Defined Message"+ name)</option>
+<option>JOptionPane.showInputDialog("User Defined Message"+ (name + ....nameF))</option>
+</select>);</pre></td>
+<td align = "left">&rArr;&nbsp;Interprets the input token into a long number.<br/>
+<br/>
+&rArr;&nbsp;Java Version Compatibility: Java 5.0 and above</td>
+
+</tr>
+<tr align = "center">
+<td><pre>Float.parseFloat();</pre></td>
+<td align = "left"><pre><font color = "mediumblue">float</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select>
+
+name = Float.parseFloat(<select>
+<option>JOptionPane.showInputDialog(name)</option>
+<option>JOptionPane.showInputDialog(name + ....nameF)</option>
+<option>JOptionPane.showInputDialog("User Defined Message")</option>
+<option>JOptionPane.showInputDialog("User Defined Message"+ name)</option>
+<option>JOptionPane.showInputDialog("User Defined Message"+ (name + ....nameF))</option>
+</select>);</pre></td>
+<td rowspan = "2" align = "left">&rArr;&nbsp;Interprets the input token into a floating-point number.<br/>
+<br/>
+&rArr;&nbsp;Java Version Compatibility: Java 5.0 and above</td>
+
+</tr>
+<tr align = "center">
+<td><pre>Double.parseDouble();</pre></td>
+<td align = "left"><pre><font color = "mediumblue">double</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select>
+
+name = Double.parseDouble(<select>
+<option>JOptionPane.showInputDialog(name)</option>
+<option>JOptionPane.showInputDialog(name + ....nameF)</option>
+<option>JOptionPane.showInputDialog("User Defined Message")</option>
+<option>JOptionPane.showInputDialog("User Defined Message"+ name)</option>
+<option>JOptionPane.showInputDialog("User Defined Message"+ (name + ....nameF))</option>
+</select>);</pre></td>
+
+
+</tr>
+<tr align = "center">
+<td><pre>JOptionPane.showInputDialog().charAt();</pre></td>
+<td align = "left"><pre><font color = "mediumblue">char</font> <select>
+<option>name;</option>
+<option>name = 'letter, word or symbol'</option>
+<option>name, ....nameF;</option>
+<option>name = 'letter, word or symbol', ....nameF = 'letter, word or symbol'</option>
+</select>
+
+name = <select>
+<option>JOptionPane.showInputDialog(name)</option>
+<option>JOptionPane.showInputDialog(name + ....nameF)</option>
+<option>JOptionPane.showInputDialog("User Defined Message")</option>
+<option>JOptionPane.showInputDialog("User Defined Message"+ name)</option>
+<option>JOptionPane.showInputDialog("User Defined Message"+ (name + ....nameF))</option>
+</select>.charAt(num);</pre></td>
+<td align = "left">&rArr;&nbsp;Interprets the input token into a character.<br/>
+<br/>
+&rArr;&nbsp;Java Version Compatibility: Java 5.0 and above</td>
+
+</tr>
+<tr align = "center">
+<td><pre>Boolean.parseBoolean();</pre></td>
+<td align = "left"><pre><font color = "mediumblue">boolean</font> <select>
+<option>name;</option>
+<option>name = Boolean_Value;</option>
+<option>name, ....nameF;</option>
+<option>name = Boolean_Value, ....nameF = Boolean_Value;</option>
+</select>
+
+name = Boolean.parseBoolean(<select>
+<option>JOptionPane.showInputDialog(name)</option>
+<option>JOptionPane.showInputDialog(name + ....nameF)</option>
+<option>JOptionPane.showInputDialog("User Defined Message")</option>
+<option>JOptionPane.showInputDialog("User Defined Message"+ name)</option>
+<option>JOptionPane.showInputDialog("User Defined Message"+ (name + ....nameF))</option>
+</select>);</pre></td>
+<td align = "left">&rArr;&nbsp;Interprets the input token into a boolean value.<br/>
+<br/>
+&rArr;&nbsp;Java Version Compatibility: Java 5.0 and above</td>
+
+</tr>
+</table>
+
+
+<p>
+<br/><br/>
+</p>
+
+
+<table border = "2" align = "center">
+<tr>
+<th colspan = "4">Basic Declaration of Java Programming</th>
+</tr>
+<tr>
+<th>Primitive Data Type</th>
+<th>Name</th>
+<th>Syntax</th>
+<th>Definition</th>
+</tr>
+<tr align = "center">
+<td>int</td>
+<td>Integer</td>
+<td><pre><font color = "mediumblue">int</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select></pre></td>
+<td rowspan = "4" align = "left">&rArr;&nbsp;Represents whole number.</td>
+</tr>
+<tr align = "center">
+<td>byte</td>
+<td>Byte</td>
+<td><pre><font color = "mediumblue">byte</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select></pre></td>
+
+</tr>
+<tr align = "center">
+<td>short</td>
+<td>Short</td>
+<td><pre><font color = "mediumblue">short</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select></pre></td>
+
+</tr>
+<tr align = "center">
+<td>long</td>
+<td>Long</td>
+<td><pre><font color = "mediumblue">long</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select></pre></td>
+
+</tr>
+<tr align = "center">
+<td>float</td>
+<td>Floating-Point</td>
+<td><pre><font color = "mediumblue">float</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select></pre></td>
+<td rowspan = "2" align = "left">&rArr;&nbsp;Represents number with decimal point.</td>
+</tr>
+<tr align = "center">
+<td>double</td>
+<td>Double</td>
+<td><pre><font color = "mediumblue">double</font> <select>
+<option>name;</option>
+<option>name = num;</option>
+<option>name, ....nameF;</option>
+<option>name = num, ....nameF = num;</option>
+</select></pre></td>
+
+</tr>
+<tr align = "center">
+<td>String</td>
+<td>String</td>
+<td><pre>String <select>
+<option>name;</option>
+<option>name = "letter(s), word(s) or symbol(s)";</option>
+<option>name, ....nameF;</option>
+<option>name = "letter(s), word(s) or symbol(s)", ....nameF = "letter(s), word(s) or symbol(s)";</option>
+</select></pre></td>
+<td align = "left">&rArr;&nbsp;Represents a data type that contains multiple characters.</td>
+</tr>
+<tr align = "center">
+<td>char</td>
+<td>Character</td>
+<td><pre><font color = "mediumblue">char</font> <select>
+<option>name;</option>
+<option>name = 'letter, word or symbol'</option>
+<option>name, ....nameF;</option>
+<option>name = 'letter, word or symbol', ....nameF = 'letter, word or symbol'</option>
+</select></pre></td>
+<td align = "left">&rArr;&nbsp;Represents a single unicode character. It must have its literal enclosed in single quotes (' ').</td>
+</tr>
+<tr align = "center">
+<td>bool</td>
+<td>Boolean</td>
+<td><pre><font color = "mediumblue">boolean</font> <select>
+<option>name;</option>
+<option>name = Boolean_Value;</option>
+<option>name, ....nameF;</option>
+<option>name = Boolean_Value, ....nameF = Boolean_Value;</option>
+</select></pre></td>
+<td align = "left">&rArr;&nbsp;Represents True or False.</td>
+</tr>
+</table>
+
+
+<p>
+<br/><br/>
+</p>
+
+
+<table border = "2" align = "center">
+<tr>
+<th colspan = "3">Some of Javas Supported Conversions for System.out.printf();, String.format();</th>
+</tr>
+<tr>
+<th>Symbols</th>
+<th>Conversion</th>
+<th>Definition</th>
+</tr>
+<tr align = "center">
+<td>%</td>
+<td>Percent</td>
+<td align = "left">&rArr;&nbsp;The result is '%'.</td>
+</tr>
+<tr align = "center">
+<td>%s</td>
+<td>General</td>
+<td align = "left">&rArr;&nbsp;The result is a string.</td>
+</tr>
+<tr align = "center">
+<td>%c</td>
+<td>Character</td>
+<td align = "left">&rArr;&nbsp;The result is a Unicode character.</td>
+</tr>
+<tr align = "center">
+<td>%d</td>
+<td>Integral</td>
+<td align = "left">&rArr;&nbsp;The result is formatted as a (decimal) integer.</td>
+</tr>
+<tr align = "center">
+<td>%e</td>
+<td>Floating Point</td>
+<td align = "left">&rArr;&nbsp;The result is formatted as a decimal number in computerized scientific notation.</td>
+</tr>
+<tr align = "center">
+<td>%f</td>
+<td>Floating Point</td>
+<td align = "left">&rArr;&nbsp;The result is formatted as a decimal number.</td>
+</tr>
+<tr align = "center">
+<td>%n</td>
+<td>Line Separator</td>
+<td align = "left">&rArr;&nbsp;The result is the platform-specific line separator.</td>
+</tr>
+</table>
+
+
+<p>
+<br/><br/>
+</p>
+
+
+<table border = "2" align = "center">
+<tr>
+<th colspan = "2">Character Literals or Escape Sequence</th>
+</tr>
+<tr>
+<th colspan = "2">(for JOptionPane)</th>
+</tr>
+<tr>
+<th>Symbols</th>
+<th>Name</th>
+</tr>
+<tr align = "center">
+<td>\n</td>
+<td>Newline</td>
+</tr>
+<tr align = "center">
+<td>\r</td>
+<td>Carriage Return</td>
+</tr>
+<tr align = "center">
+<td>\t</td>
+<td>Tab</td>
+</tr>
+<tr align = "center">
+<td>\v</td>
+<td>Vertical Tab</td>
+</tr>
+<tr align = "center">
+<td>\b</td>
+<td>Backspace</td>
+</tr>
+<tr align = "center">
+<td>\f</td>
+<td>Form Feed (Page Feed)</td>
+</tr>
+<tr align = "center">
+<td>\a</td>
+<td>Alert (Beep)</td>
+</tr>
+<tr align = "center">
+<td>\'</td>
+<td>Single Quote (')</td>
+</tr>
+<tr align = "center">
+<td>\"</td>
+<td>Double Quote (")</td>
+</tr>
+<tr align = "center">
+<td>\?</td>
+<td>Question Mark (?)</td>
+</tr>
+<tr align = "center">
+<td>\\</td>
+<td>Backslash (\)</td>
+</tr>
+</table>
+
+
+<p>
+<br/><br/>
+</p>
+
+
+<table border = "2" align = "center">
+<tr>
+<th colspan = "3">Arithmetic Operators</th>
+</tr>
+<tr>
+<th>Symbols</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr align = "center">
+<td>+</td>
+<td>Addition</td>
+<td align = "left">&rArr;&nbsp;Adds any number(s).</td>
+</tr>
+<tr align = "center">
+<td>-</td>
+<td>Subtraction</td>
+<td align = "left">&rArr;&nbsp;Subtracts any number(s).</td>
+</tr>
+<tr align = "center">
+<td>*</td>
+<td>Multiplication</td>
+<td align = "left">&rArr;&nbsp;Multiplies any number(s).</td>
+</tr>
+<tr align = "center">
+<td>/</td>
+<td>Division</td>
+<td align = "left">&rArr;&nbsp;Divides any number(s).</td>
+</tr>
+<tr align = "center">
+<td>%</td>
+<td>Modulus</td>
+<td align = "left">&rArr;&nbsp;Computes the remainder of dividing any number(s).</td>
+</tr>
+</table>
+
+
+<p>
+<br/><br/>
+</p>
+
+
+<table border = "2" align = "center">
+<tr>
+<th colspan = "2">Relational and Equality Operators</th>
+</tr>
+<tr>
+<th>Symbols</th>
+<th>Name</th>
+</tr>
+<tr align = "center">
+<td>&gt;</td>
+<td>Greater than</td>
+</tr>
+<tr align = "center">
+<td>&lt;</td>
+<td>Less than</td>
+</tr>
+<tr align = "center">
+<td>&gt;=</td>
+<td>Greater than or Equal to</td>
+</tr>
+<tr align = "center">
+<td>&lt;=</td>
+<td>Less than or Equal to</td>
+</tr>
+<tr align = "center">
+<td>==</td>
+<td>Equal to</td>
+</tr>
+<tr align = "center">
+<td>!=</td>
+<td>Not equal to</td>
+</tr>
+</table>
+
+
+<p>
+<br/><br/>
+</p>
+
+
+<table border = "2" align = "center">
+<tr>
+<th colspan = "8">Logical Operators</th>
+</tr>
+<tr>
+<th>Symbols</th>
+<th>Name</th>
+<th>Syntax</th>
+<th>Description</th>
+
+<td rowspan = "22">&nbsp;&nbsp;</td>
+
+<th colspan = "3">Truth Table</th>
+</tr>
+<tr align = "center">
+<td rowspan = "3">&&</td>
+<td rowspan = "3">AND Operator</td>
+<td rowspan = "3"><pre>num1 && num2</pre></td>
+<td rowspan = "3" align = "left">&rArr;&nbsp;Supports short-circuit evaluation or partial evaluation.</td>
+
+<th>num1</th>
+<th>num2</th>
+<th>Result</th>
+</tr>
+<tr align = "center">
+
+
+
+
+<td><pre>True
+True
+False
+False</pre></td>
+<td><pre>True
+False
+True
+False</pre></td>
+<td><pre>True
+False
+False
+False</pre></td>
+</tr>
+
+<tr>
+<td colspan = "3"><br/></td>
+</tr>
+
+<tr align = "center">
+<td rowspan = "3">&</td>
+<td rowspan = "3">Boolean Logical AND</td>
+<td rowspan = "3"><pre>num1 & num2</pre></td>
+<td rowspan = "3" align = "left">&rArr;&nbsp;Doesnt support short-circuit evaluation or partial evaluation.</td>
+
+<th>num1</th>
+<th>num2</th>
+<th>Result</th>
+</tr>
+<tr align = "center">
+
+
+
+<td><pre>True
+True
+False
+False</pre></td>
+<td><pre>True
+False
+True
+False</pre></td>
+<td><pre>True
+False
+False
+False</pre></td>
+</tr>
+
+<tr>
+<td colspan = "3"><br/></td>
+</tr>
+
+<tr align = "center">
+<td rowspan = "3">||</td>
+<td rowspan = "3">OR Operator</td>
+<td rowspan = "3"><pre>num1 || num2</pre></td>
+<td rowspan = "3" align = "left">&rArr;&nbsp;Supports short-circuit evaluation or partial evaluation.</td>
+
+<th>num1</th>
+<th>num2</th>
+<th>Result</th>
+</tr>
+<tr align = "center">
+
+
+
+<td><pre>True
+True
+False
+False</pre></td>
+<td><pre>True
+False
+True
+False</pre></td>
+<td><pre>True
+True
+True
+False</pre></td>
+</tr>
+
+<tr>
+<td colspan = "3"><br/></td>
+</tr>
+
+<tr align = "center">
+<td rowspan = "3">|</td>
+<td rowspan = "3">Boolean Logical Inclusive OR</td>
+<td rowspan = "3"><pre>num1 | num2</pre></td>
+<td rowspan = "3" align = "left">&rArr;&nbsp;Doesnt support short-circuit evaluation or partial evaluation.</td>
+
+<th>num1</th>
+<th>num2</th>
+<th>Result</th>
+</tr>
+<tr align = "center">
+
+
+
+<td><pre>True
+True
+False
+False</pre></td>
+<td><pre>True
+False
+True
+False</pre></td>
+<td><pre>True
+True
+True
+False</pre></td>
+</tr>
+
+<tr>
+<td colspan = "3"><br/></td>
+</tr>
+
+<tr align = "center">
+<td rowspan = "3">^</td>
+<td rowspan = "3">Boolean Logical Exclusive OR</td>
+<td rowspan = "3"><pre>num1 ^ num2</pre></td>
+<td rowspan = "3" align = "left">&rArr;&nbsp;The result ^ is true if and only if only one operand is true and the other is false.</td>
+
+<th>num1</th>
+<th>num2</th>
+<th>Result</th>
+</tr>
+<tr align = "center">
+
+
+
+<td><pre>True
+True
+False
+False</pre></td>
+<td><pre>True
+False
+True
+False</pre></td>
+<td><pre>False
+True
+True
+False</pre></td>
+</tr>
+
+<tr>
+<td colspan = "3"><br/></td>
+</tr>
+
+<tr align = "center">
+<td rowspan = "3">!</td>
+<td rowspan = "3">NOT Operator</td>
+<td rowspan = "3"><pre>! num1</pre></td>
+<td rowspan = "3" align = "left">&rArr;&nbsp;Inverts the declared value.</td>
+
+<th colspan = "2">num1</th>
+
+<th>Result</th>
+</tr>
+<tr align = "center">
+
+
+
+<td colspan = "2"><pre>True
+False</pre></td>
+
+<td><pre>False
+True</pre></td>
+</tr>
+
+<tr>
+<td colspan = "3"><br/></td>
+</tr>
+
+<tr align = "center">
+<td rowspan = "3">?:</td>
+<td rowspan = "3">Conditional Operator</td>
+<td rowspan = "3"><pre>(num1 ? num2) : num3</pre></td>
+<td rowspan = "3" align = "left">&rArr;&nbsp;It is a ternary operator. It takes in 3 arguments that together form a conditional expression.</td>
+
+<th>num1</th>
+<th>num2</th>
+<th>Result</th>
+</tr>
+<tr align = "center">
+
+
+
+<td><pre>True
+True
+False
+False</pre></td>
+<td><pre>True
+False
+True
+False</pre></td>
+<td><pre><font color = "redorange">unknown</font></pre></td>
+</tr>
+</table>
+
+
+<p>
+<br/><br/>
+</p>
+
+
+<table border = "2" align = "center">
+<tr>
+<th colspan = "3">Other Operators</th>
+</tr>
+<tr>
+<th>Symbols</th>
+<th>Name</th>
+<th>Definition</th>
+</tr>
+<tr align = "center">
+<td>variable++</td>
+<td rowspan = "2">Increment Operator</td>
+<td align = "left">&rArr;&nbsp;Increments variable by 1, evaluates to the value of variable before it was incremented.</td>
+</tr>
+<tr align = "center">
+<td>++variable</td>
+
+<td align = "left">&rArr;&nbsp;Increments variable by 1, evaluates to the value of variable after it was incremented.</td>
+</tr>
+<tr align = "center">
+<td>variable--</td>
+<td rowspan = "2">Decrement Operator</td>
+<td align = "left">&rArr;&nbsp;Decrements variable by 1, evaluates to the value of variable before it was decremented.</td>
+</tr>
+<tr align = "center">
+<td>--variable</td>
+
+<td align = "left">&rArr;&nbsp;Decrements variable by 1, evaluates to the value of variable after it was decremented.</td>
+</tr>
+</table>
+
+
+<p>
+<br/><br/>
+</p>
+
+
+<table border = "2" align = "center">
+<tr>
+<th colspan = "2">Scanner <font color = "mediumblue">class</font></th>
+</tr>
+<tr>
+<th>Java Code(s)</th>
+<th><pre><font color = "mediumblue">import</font> PackageName.*;</pre></th>
+</tr>
+<tr align = "center">
+<td><pre>Scanner input = <font color = "mediumblue">new</font> Scanner(System.in);</pre></td>
+<td rowspan = "4"><pre><font color = "mediumblue">import</font> java.util.Scanner;</pre></td>
+</tr>
+<tr align = "center">
+<td><pre>Scanner console = <font color = "mediumblue">new</font> Scanner(System.in);</pre></td>
+
+</tr>
+<tr align = "center">
+<td><pre>Scanner inFile = <font color = "mediumblue">new</font> Scanner(<font color = "mediumblue">new</font> FileReader("prog.dat"));</pre></td>
+
+</tr>
+<tr align = "center">
+<td><pre>PrintWriter outFile = <font color = "mediumblue">new</font> PrintWriter("prog.out");</pre></td>
+
+</tr>
+<tr align = "left">
+<th colspan = "3">Note:<br/>
+&rArr;&nbsp;Standard Input Stream Object<br/>
+<br/>
+&rArr;&nbsp;It is designed to input data from the standard input device. However, the object System.in extracts data in the form of bytes from the input stream. Therefore, using System.in, we first create a Scanner object so that the data can be extracted in a desired form.<br/>
+<br/>
+&rArr;&nbsp;Java Version Compatibility: Java 5.0 and above</th>
+</tr>
+</table>
+
+
+<p>
+<br/><br/>
+</p>
+
+
+<table border = "2" align = "center">
+<tr>
+<th colspan = "3">Others</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Syntax</th>
+<th>Definition</th>
+</tr>
+<tr align = "center">
+<td>Type Conversion (Casting)</td>
+<td><pre>(<select>
+<option>dataTypeName</option>
+<option>int</option>
+<option>byte</option>
+<option>short</option>
+<option>long</option>
+<option>float</option>
+<option>double</option>
+<option>String</option>
+<option>char</option>
+<option>boolean</option>
+</select>) <select>
+<option>expression</option>
+<option>name</option>
+<option>name + ....nameF</option>
+<option>name - ....nameF</option>
+<option>name * ....nameF</option>
+<option>name / ....nameF</option>
+<option>name % ....nameF</option>
+<option>num</option>
+<option>num + ....numF</option>
+<option>num - ....numF</option>
+<option>num * ....numF</option>
+<option>num / ....numF</option>
+<option>num % ....numF</option>
+</select></pre></td>
+<td align = "left">&rArr;&nbsp;Provides for explicit type conversion.</td>
+</tr>
+</table>
+
+
+<p>
+<br/><br/>
+</p>
+
+
+<table border = "2" align = "center">
+<tr>
+<th colspan = "4">Statements that Control the Flow of the Program</th>
+</tr>
+<tr>
+<th>Java Code(s)</th>
+<th>Name</th>
+<th>Syntax</th>
+<th>Definition</th>
+</tr>
+<tr>
+<td><pre>if ()
+{
+
+}
+
+else if ()
+{
+
+}
+
+else
+{
+
+}</pre></td>
+<td align = "center">if-else Statement</td>
+<td><pre>if (name1 <select>
+<option>Relational and Equality Operator</option>
+<option>&lt;=</option>
+<option>&gt;=</option>
+<option>==</option>
+<option>!=</option>
+</select> <select>
+<option>name2</option>
+<option>num1</option>
+</select>)
+{
+// Do Your Codes Here
+}
+
+else if (name1 <select>
+<option>Relational and Equality Operator</option>
+<option>&lt;=</option>
+<option>&gt;=</option>
+<option>==</option>
+<option>!=</option>
+</select> <select>
+<option>name2</option>
+<option>num1</option>
+</select>)
+{
+// Do Your Codes Here
+}
+
+else
+{
+// Do Your Codes Here
+}
+
+
+or
+
+
+if ((name1 <select>
+<option>Relational and Equality Operator</option>
+<option>&lt;=</option>
+<option>&gt;=</option>
+<option>==</option>
+<option>!=</option>
+</select> <select>
+<option>name2</option>
+<option>num1</option>
+</select>) <select>
+<option>Some of the Logical Operator</option>
+<option>&&</option>
+<option>&</option>
+<option>||</option>
+<option>|</option>
+<option>^</option>
+<option>!</option>
+</select> (name3 <select>
+<option>Relational and Equality Operator</option>
+<option>&lt;=</option>
+<option>&gt;=</option>
+<option>==</option>
+<option>!=</option>
+</select> <select>
+<option>name4</option>
+<option>num2</option>
+</select>))
+{
+// Do Your Codes Here
+}
+
+else if ((name1 <select>
+<option>Relational and Equality Operator</option>
+<option>&lt;=</option>
+<option>&gt;=</option>
+<option>==</option>
+<option>!=</option>
+</select> <select>
+<option>name2</option>
+<option>num1</option>
+</select>) <select>
+<option>Some of the Logical Operator</option>
+<option>&&</option>
+<option>&</option>
+<option>||</option>
+<option>|</option>
+<option>^</option>
+<option>!</option>
+</select> (name3 <select>
+<option>Relational and Equality Operator</option>
+<option>&lt;=</option>
+<option>&gt;=</option>
+<option>==</option>
+<option>!=</option>
+</select> <select>
+<option>name4</option>
+<option>num2</option>
+</select>))
+{
+// Do Your Codes Here
+}
+
+else
+{
+// Do Your Codes Here
+}</pre></td>
+<td>&rArr;&nbsp;Used to test your code(s) to run the program under <b>if-else Statement</b>. If the arguments under <b>if Statement</b> is true, the code(s) under that statement will run the program. If it is false, the <b>else Statement</b> will run the program. If an <i>if Statement</i> is declared right beside an <i>else Statement</i>, it will test first all the code(s) outside an <i>else Statement</i> before running that statement together with an <i>if Statement</i>.</td>
+</tr>
+<tr>
+<td><pre>while ()
+{
+
+}</pre></td>
+<td align = "center">while Loop</td>
+<td><pre>while (name1 <select>
+<option>Relational and Equality Operator</option>
+<option>&lt;=</option>
+<option>&gt;=</option>
+<option>==</option>
+<option>!=</option>
+</select> <select>
+<option>name2</option>
+<option>num1</option>
+</select>)
+{
+// Do Your Codes Here
+}
+
+
+or
+
+
+while ((name1 <select>
+<option>Relational and Equality Operator</option>
+<option>&lt;=</option>
+<option>&gt;=</option>
+<option>==</option>
+<option>!=</option>
+</select> <select>
+<option>name2</option>
+<option>num1</option>
+</select>) <select>
+<option>Some of the Logical Operator</option>
+<option>&&</option>
+<option>&</option>
+<option>||</option>
+<option>|</option>
+<option>^</option>
+<option>!</option>
+</select> (name3 <select>
+<option>Relational and Equality Operator</option>
+<option>&lt;=</option>
+<option>&gt;=</option>
+<option>==</option>
+<option>!=</option>
+</select> <select>
+<option>name4</option>
+<option>num2</option>
+</select>))
+{
+// Do Your Codes Here
+}</pre></td>
+<td rowspan = "2">&rArr;&nbsp;Used to loop a statement simultaneously if the argument in <i>while ()</i> is true. If the argument from that is false, the loop will be terminated.</td>
+</tr>
+<tr>
+<td><pre>do
+{
+
+}
+while ();</pre></td>
+<td align = "center">do-while Loop</td>
+<td><pre>do
+{
+// Do Your Codes Here
+}
+while (name1 <select>
+<option>Relational and Equality Operator</option>
+<option>&lt;=</option>
+<option>&gt;=</option>
+<option>==</option>
+<option>!=</option>
+</select> <select>
+<option>name2</option>
+<option>num1</option>
+</select>);
+
+
+or
+
+
+do
+{
+// Do Your Codes Here
+}
+while ((name1 <select>
+<option>Relational and Equality Operator</option>
+<option>&lt;=</option>
+<option>&gt;=</option>
+<option>==</option>
+<option>!=</option>
+</select> <select>
+<option>name2</option>
+<option>num1</option>
+</select>) <select>
+<option>Some of the Logical Operator</option>
+<option>&&</option>
+<option>&</option>
+<option>||</option>
+<option>|</option>
+<option>^</option>
+<option>!</option>
+</select> (name3 <select>
+<option>Relational and Equality Operator</option>
+<option>&lt;=</option>
+<option>&gt;=</option>
+<option>==</option>
+<option>!=</option>
+</select> <select>
+<option>name4</option>
+<option>num2</option>
+</select>));</pre></td></pre></td>
+
+</tr>
+<tr>
+<td><pre>for ()
+{
+
+}</pre></td>
+<td align = "center">for Loop</td>
+<td><pre>for (name1 = <select>
+<option>name2</option>
+<option>num1</option>
+</select>; name1 <select>
+<option>Relational and Equality Operator</option>
+<option>&lt;=</option>
+<option>&gt;=</option>
+<option>==</option>
+<option>!=</option>
+</select> <select>
+<option>name3</option>
+<option>num2</option>
+</select>; <select>
+<option>increment++</option>
+<option>++increment</option>
+<option>increment+=num1</option>
+<option>decrement--</option>
+<option>decrement-=num1</option>
+<option>--decrement</option>
+</select>)
+{
+// Do Your Codes Here
+}</pre></td>
+<td>&rArr;&nbsp;Used to loop a statement simultaneously if the argument is false and adds the increment or decrement variable to the initialize variable to make the arguments true and make the loop terminated or use only the increment or decrement variable to the initialize variable to loop the statement continuously until the agreement becomes true.</td>
+</tr>
+<tr>
+<td><pre>switch ()
+{
+case " ":
+break;
+
+case " ":
+break;
+
+default:
+break;
+}
+
+
+or
+
+
+switch ()
+{
+case ' ':
+break;
+
+case ' ':
+break;
+
+default:
+break;
+}
+
+
+or
+
+
+switch ()
+{
+case ():
+break;
+
+case ():
+break;
+
+default:
+break;
+}</pre></td>
+<td align = "center">switch Statement</td>
+<td><pre>switch (name)
+{
+case "characters or letters1":
+// Do Your Codes Here
+break;
+
+case "characters or letters2":
+// Do Your Codes Here
+break;
+
+default:
+// Do Your Codes Here
+break;
+}
+
+
+or
+
+
+switch (name)
+{
+case 'character or letter1':
+// Do Your Codes Here
+break;
+
+case 'character or letter2':
+// Do Your Codes Here
+break;
+
+default:
+// Do Your Codes Here
+break;
+}
+
+
+or
+
+
+switch (name)
+{
+case (mathematical operation1):
+// Do Your Codes Here
+break;
+
+case (mathematical operation2):
+// Do Your Codes Here
+break;
+
+default:
+// Do Your Codes Here
+break;
+}</pre></td>
+<td>&rArr;&nbsp;Used to get the name of the code declared by the programmer and get it by <b>switch Statement</b> to use and run the inside features of that statement. The <i>switch Statement</i> is just like an <i>if-else Statement</i>. If the first <i>case condition</i> is true, it will run its content code(s) or program. If the first <i>case condition</i> is false, the second <i>case condition</i> will be use to run a program. If it is false again, it will find the <i>case condition</i> to make a statement true to run a program. If all <i>case condition</i> is false, it will fall to <i>default condition</i>. The <b>break Statement</b> is required in each <i>case condition</i> except <i>default condition</i>. If the <i>case condition</i> does not meet the requirement, all <i>case condition</i> not having <i>break Statement</i> will make as one <i>case condition</i> until it reaches a condition that uses a <i>break Statement</i>. If not, the program will flow continously without having that statement until it reaches a <i>default condition</i>.<br/>
+<br/>
+For the symbols of ' ' and " ":
+<ul type = "circle">
+<li>' ' means one character or letter can be declared in a <i>case condition</i> that is based in a <i>char data type</i>.</li><br/>
+<li>" " means two or more characters or words can be declared in a <i>case condition</i> that is based in a <i>String declaration</i>.</li>
+</ul></td>
+</tr>
+<tr align = "center">
+<td>break;</td>
+<td>break Statement</td>
+<td align = "left"><pre>// Do Your Codes Here
+break;
+
+
+or
+
+
+// Do Your Codes Here
+break name;</pre></td>
+<td align = "left">&rArr;&nbsp;Used to stop or terminate all the programs running on your screen.</td>
+</tr>
+<tr align = "center">
+<td>continue;</td>
+<td>continue Statement</td>
+<td align = "left"><pre>// Do Your Codes Here
+continue;
+// Do Your Codes Here
+
+
+or
+
+
+// Do Your Codes Here
+continue name;
+// Do Your Codes Here</pre></td>
+<td align = "left">&rArr;&nbsp;Used to skip the current task and move the process into the next task.</td>
+</tr>
+
+
+<tr>
+<td colspan = "4"><br/><br/></td>
+</tr>
+
+
+<tr>
+<th colspan = "4">Statements that Do Not Control the Flow of the Program</th>
+</tr>
+<tr>
+<th>JavaScript Code(s)</th>
+<th>N    ame</th>
+<th>Syntax</th>
+<th>Definition</th>
+</tr>
+<tr align = "center">
+<td><pre>// ....</pre></td>
+<td>Line Comment</td>
+<td><pre>// User Defined Message</pre></td>
+<td rowspan = "2" align = "left">&rArr;&nbsp;Used to place any message on the program without displaying any output about your message.</td>
+</tr>
+<tr align = "center">
+<td><pre>/* .... */</pre></td>
+<td>Block Comment</td>
+<td><pre>/* User Defined Message */</pre></td>
+
+</tr>
+</table>
+
+</body>
+</head>
+</html>

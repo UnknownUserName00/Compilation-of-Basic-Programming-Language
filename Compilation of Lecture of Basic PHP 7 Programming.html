@@ -1,0 +1,436 @@
+<! DOCTYPE html>
+<head>
+    <title>Basic PHP 7 Programming</title>
+
+    <style>
+        body {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<h1 align = "center">Welcome to Basic PHP 7 Programming</h1>
+<p align = "center">
+The main definition of <b><font color = "Purple" size = "5">PHP</font></b> is <b>Hypertext Preprocessor</b>.
+</p>
+<pre>
+&lt;?php
+    // if-else statement
+    if () {
+
+    }
+
+    elseif () {
+
+    }
+
+    else {
+
+    }
+
+
+
+
+    // Database Connection
+    /* Database config */
+    $db_host = 'localhost';
+    $db_user = 'root';
+    $db_pass = '';
+    $db_database = 'databaseName'; 
+
+    /* End config */
+
+    $db = new PDO('mysql:host='.$db_host.';dbname='.$db_database, $db_user, $db_pass);
+    $db-&gt;setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+
+
+
+    session_start();
+    if (isset($_SESSION['SESS_LAST_NAME'])) {
+        if (isset($_SESSION['SESS_FIRST_NAME'])) {
+            if ($_SESSION['SESS_LAST_NAME'] == "adminDashboard.php") {
+                $userDefinedUserName = $_SESSION['SESS_FIRST_NAME'];
+                header("location: directory/transferPHPpage.php?userDefinedUserName=$userDefinedUserName");
+                exit();
+            }
+
+            elseif ($_SESSION['SESS_LAST_NAME'] == "cashierPettycash.php") {
+                $userDefinedUserName = $_SESSION['SESS_FIRST_NAME'];
+                header("location: directory/transferPHPpage.php?transactNum&notify&userDefinedUserName=$userDefinedUserName&beginBalance=0");
+                exit();
+            }
+        }
+    }
+
+    else {
+        unset($_SESSION['SESS_FIRST_NAME']);
+        unset($_SESSION['SESS_LAST_NAME']);
+    }
+
+    if(!isset($_SESSION['SESS_FIRST_NAME']) || (trim($_SESSION['SESS_FIRST_NAME']) == '')) {
+        header("location: transferPHPpage.php");
+        exit();
+    }
+
+    $adminName = $_GET['adminName'];
+    if ($_SESSION['SESS_FIRST_NAME'] != $adminName) {
+        header("directory: ../../transferPHPpage.php");
+        exit();
+    }
+
+
+
+
+    include "directory/importingPHPinfo.php";
+
+
+
+
+    // Date and Time
+    // Add 30 Days:
+    $Date = "2010-09-17";
+    echo date('Y-m-d', strtotime($Date. ' + 1 days'));
+    echo date('Y-m-d', strtotime($Date. ' + 2 days'));
+
+    // Source: https://stackoverflow.com/questions/3727615/adding-days-to-date-in-php#3727821
+
+
+    // PHP Array Push
+    $a = array("red", "green");
+    array_push($a, "blue", "yellow");
+    print_r($a);
+
+    // Source: https://www.w3schools.com/Php/func_array_push.asp
+
+
+    // PHP Array foreach loop
+    $a = array("red", "green");
+    array_push($a, "blue", "yellow");
+
+    foreach($colors as $value) {
+        echo $value . "&lt;br/&gt;";
+    }
+
+    // Source: https://www.w3schools.com/php/php_looping_foreach.asp
+
+
+    // PHP Setting Timezone
+    // H - 24-hour format of an hour (00 to 23)
+    // h - 12-hour format of an hour with leading zeros (01 to 12)
+    // i - Minutes with leading zeros (00 to 59)
+    // s - Seconds with leading zeros (00 to 59)
+    // a - Lowercase Ante meridiem and Post meridiem (am or pm)
+
+    date_default_timezone_set("America/New_York");
+    echo "The time is " . date("h:i:sa");
+
+
+    // Source: https://www.w3schools.com/php/php_date.asp
+    // Source: https://www.php.net/manual/en/timezones.asia.php
+
+
+    // PHP Getting Timestamp
+    $date=date_create();
+    echo date_timestamp_get($date);
+
+    // Source: https://www.w3schools.com/php/func_date_timestamp_get.asp
+
+
+    // HTML Changing Tab Color
+    &lt;meta name="theme-color" content="#999999" /&gt;
+
+    // Source: https://stackoverflow.com/questions/26960703/how-to-change-the-color-of-header-bar-and-address-bar-in-newest-chrome-version-o#26960753
+
+
+    $date = new DateTime();
+    $date-&gt;add(new DateInterval('PT6H'));
+    $fullDateFormat = $date-&gt;format('Y-m-d');
+    $timeFormat = $date->format('h:i A');
+
+    $timeDelivered = $_GET['timeDelivered'];
+    $hourTime = substr($timeDelivered, 0, 2) * 1;
+    $minuteTime = substr($timeDelivered, 3, 4);
+
+    $hourFormat = [12, "0" . 1, "0" . 2, "0" . 3, "0" . 4, "0" . 5, "0" . 6, "0" . 7, "0" . 8, "0" . 9, 10, 11, 12, "0" . 1, "0" . 2, "0" . 3, "0" . 4, "0" . 5, "0" . 6, "0" . 7, "0" . 8, "0" . 9, 10, 11];
+    $modeDayFormat = ($hourTime < 12) ? "AM" : "PM";
+    $fixErrorTime = $hourFormat[$hourTime];
+
+    $timeFormat = $fixErrorTime . ":" . $minuteTime . " " . $modeDayFormat;
+
+    $searchProductNameChar = strpos($productName, "ñ");
+    $searchBrandChar = strpos($productBrand, "ñ");
+    $searchSupplierNameChar = strpos($supplierName, "ñ");
+    $searchSupplierAddressChar = strpos($supplierAddress, "ñ");
+    $searchContactPersonChar = strpos($contactPerson, "ñ");
+
+
+
+
+    // PHP Array
+    $cars = array("Volvo", "BMW", "Toyota");
+    echo "I like " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . ".";
+
+
+    // PHP Array Length
+    $cars = array("Volvo", "BMW", "Toyota");
+    echo count($cars);
+
+    // Source: https://www.w3schools.com/php/php_arrays.asp
+
+
+    // Create a File
+    $my_file = 'file.txt';
+    $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file); //implicitly creates file
+
+
+    // PHP File Exist
+    echo file_exists("filename.fileExtension");
+
+
+    // PHP File Open
+    $file = fopen("test.txt", "r");
+    $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file); //open file for writing ('w','r','a')...
+
+    // Output lines until EOF is reached
+    while(! feof($file)) {
+        $line = fgets($file);
+        echo $line. "&lt;br&gt;";
+    }
+
+    fclose($file);
+
+/*
+Note: When writing to a text file, be sure to use the correct line-ending character! Unix systems use \n, Windows systems use \r\n, and Macintosh systems use \r as the line ending character. Windows offers a translation flag ('t') which will translate \n to \r\n when working with the file. You can also use 'b' to force binary mode. To use these flags, specify either 'b' or 't' as the last character of the mode parameter.
+
+Syntax
+fopen(filename, mode, include_path, context)
+
+Parameter    |    Values
+Parameter    |    Description
+filename    |    Required. Specifies the file or URL to open
+
+mode    |    Required. Specifies the type of access you require to the file/stream.
+Possible values:
+
+"r" - Read only. Starts at the beginning of the file
+"r+" - Read/Write. Starts at the beginning of the file
+"w" - Write only. Opens and truncates the file; or creates a new file if it doesn't exist. Place file pointer at the beginning of the file
+"w+" - Read/Write. Opens and truncates the file; or creates a new file if it doesn't exist. Place file pointer at the beginning of the file
+"a" - Write only. Opens and writes to the end of the file or creates a new file if it doesn't exist
+"a+" - Read/Write. Preserves file content by writing to the end of the file
+"x" - Write only. Creates a new file. Returns FALSE and an error if file already exists
+"x+" - Read/Write. Creates a new file. Returns FALSE and an error if file already exists
+"c" - Write only. Opens the file; or creates a new file if it doesn't exist. Place file pointer at the beginning of the file
+"c+" - Read/Write. Opens the file; or creates a new file if it doesn't exist. Place file pointer at the beginning of the file
+"e" - Only available in PHP compiled on POSIX.1-2008 conform systems.
+
+include_path    |    Optional. Set this parameter to '1' if you want to search for the file in the include_path (in php.ini) as well
+
+context    |    Optional. Specifies the context of the file handle. Context is a set of options that can modify the behavior of a stream
+*/
+
+
+    // PHP File Read
+    $file = fopen("test.txt", "r");
+    fread($file, filesize("test.txt"));
+    fclose($file);
+
+
+    // Write to a File
+    $my_file = 'file.txt';
+    $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
+    $data = 'This is the data';
+    fwrite($handle, $data);
+
+
+    // Append to a File
+    $my_file = 'file.txt';
+    $handle = fopen($my_file, 'a') or die('Cannot open file:  '.$my_file);
+    $data = 'New data line 1';
+    fwrite($handle, $data);
+    $new_data = "\n".'New data line 2';
+    fwrite($handle, $new_data);
+
+
+    // Close a File
+    $my_file = 'file.txt';
+    $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
+    // write some data here
+    fclose($handle);
+
+
+    // Delete a File
+    $my_file = 'file.txt';
+    unlink($my_file);
+
+    // Source: https://davidwalsh.name/basic-php-file-handling-create-open-read-write-append-close-delete
+
+
+
+
+    // to Catch the Value of PHP $_GET['userDefined']; from Another PHP File
+    if (isset($_GET['userDefinedGet'])) {
+        $userDefinedGet = $_GET['userDefinedGet'];
+    }
+
+    else {
+        $userDefinedGet = "";
+    }
+
+    // Display Value Using PHP print or PHP echo
+    echo $userDefinedGet;
+
+
+
+
+    if ( isset($_GET['SubmitTransactNum']) ) {
+        echo $productItems = htmlentities($_GET['productItems']);
+    }
+
+    else {
+        echo $_GET['productItems'] = "";
+    }
+
+
+
+
+    if ( (($amountChange * 1) == 0) || ($amountChange == (abs($amountChange) * -1)) || ($tenderCash == $amountChange) ) {
+        echo "&lt;div style = 'color: Red;' align = 'center'&gt;&lt;strong&gt;Print Restricted!&lt;/strong&gt;&lt;/div&gt;";
+    }
+
+
+
+
+    // Getting and Calling Info from Previous PHP File to a New PHP File
+    if( isset($_POST['userDefinedUserName']) and isset($_POST['userDefinedPassword']) and isset($_POST['userDefinedName1']) ) {
+        $userDefinedUserName = $_POST['userDefinedUserName'];
+        $userDefinedPassword = hash('sha512', $_POST['userDefinedPassword'], false);
+        $userDefinedName1 = $_POST['userDefinedName1'];
+
+        $checkUserNameCharSymbols = preg_match('/[\'^£$%&*()}{@#~?><>,|=_+¬-]/', $userDefinedUserName);
+        $checkPassCharSymbols = preg_match('/[\'^£$%&*()}{@#~?><>,|=_+¬-]/', $_POST['userDefinedPassword']);
+
+        $_SESSION['beginBalance'] = "0";
+
+        $sql = "SELECT * FROM databaseTableName1
+            WHERE databaseColumnName1 = '$userDefinedUserName'
+            AND databaseColumnName2 != ''
+            ORDER BY databaseColumnId ASC";
+        $result = $db-&gt;prepare($sql);
+        $result-&gt;execute();
+        for($i=0; $row = $result-&gt;fetch(); $i++){
+            echo $findName = $row['databaseColumnName'];
+        }
+
+        $sql = "SELECT DISTINCT(databaseColumnName) FROM databaseTableName";
+        $result2 = $db->prepare($sql);
+        $result2->execute();
+        for($i=0; $row2 = $result2->fetch(); $i++){
+            $criticalLevel = $row2['databaseColumnName'];
+        }
+        $productCode = strtoupper(substr($category, 0, 3)) . "-" . $idSupplier;
+
+        $findName = "";
+        $sql = "SELECT * FROM databaseTableName1
+            INNER JOIN databaseTableName2
+            ON databaseTableName1.databaseColumnId = databaseTableName2.databaseColumnId
+            WHERE databaseTableName1.databaseColumnName1 = '$userDefinedUserName'
+            AND databaseTableName2.databaseColumnName2 != ''
+            AND databaseTableName1.databaseColumnNum1 != -databaseTableName2.databaseColumnNum1
+            GROUP BY YEAR(databaseColumnSales.databaseColumnDate), MONTH(databaseColumnSales.databaseColumnDate), DATE(databaseColumnSales.databaseColumnDate)
+            ORDER BY databaseTableName1.databaseColumnId DESC";
+        $result = $db-&gt;prepare($sql);
+        $result-&gt;execute();
+        for($i=0; $row = $result-&gt;fetch(); $i++){
+            $findName = $row['databaseColumnName'];
+            $findNum = $row['SUM(databaseColumnNum)'];
+
+            $getDate = $row['databaseColumnDate'];
+            $getDateFormat = substr($getDate, 8, 2);
+            $year = substr($getDate, 0, 4);
+            $month = (substr($getDate, 5, 2)) * 1;
+            $monthArray = [0, "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+            $monthFormat = $monthArray[$month] . " " . $getDateFormat . ", " . $year;
+
+            $productLimit = round( (($productLeft / $productDelivered) * 100) );
+
+            $productCode = $row['qrProductCode'];
+            $productName = $row['qrSupplierProductName'];
+            $productPrice = $row['qrProductPrice'];
+
+            $arrayResult = htmlentities('{"name": ' . '"' . $productName . '", "quantity": 1, "price": ' . $productPrice . '}');
+        }
+        echo $findName;
+
+        $verifyUserDefined = ($findName == $userDefinedUserName) ? "True" : "False";
+
+        $userDefinedActivity = "Succesfully Register New Admin: " . $userDefinedUserName;
+        $sql = "INSERT INTO databaseTableName (databaseColumnUserName, databaseColumnPassword, databaseColumnName1, databaseColumnActivity)
+            VALUES ('$userDefinedUserName', '$userDefinedPassword', '$userDefinedName1', '$userDefinedActivity')";
+        $result = $db-&gt;prepare($sql);
+        $result-&gt;execute();
+
+        $sql = "UPDATE databaseTableName
+            SET databaseColumnName1 = '$userDefinedName1'
+            WHERE databaseColumnUserName = '$userDefinedUserName' ";
+        $result = $db-&gt;prepare($sql);
+        $result-&gt;execute();
+
+        $sql = "UPDATE databaseTableName
+            SET databaseColumnName1=?, databaseColumnName2=?
+            WHERE databaseColumnId=?";
+        $result = $db-&gt;prepare($sql);
+        $result-&gt;execute(array($databaseColumnName1,$databaseColumnName2));
+
+        $userDefinedColumnId=$_GET['userDefinedColumnId'];
+        $sql = "DELETE FROM databaseTableName
+            WHERE databaseColumnId = '$userDefinedColumnId' ";
+        $result = $db->prepare($sql);
+        $result->execute();
+
+        $userDefinedName2 = "&lt;center&gt;Message&lt;/center&gt;";
+        header("location: transferPHPpage.php?userDefinedName2=$userDefinedName2");
+        exit();
+    }
+    $num1 = number_format(0, 2, '.', '');
+    header("location: transferPHPpage.php");
+?&gt;
+
+
+
+
+&lt;form action = "transferPHPinfo.php" method = "POST" autocomplete = "off"&gt;
+&lt;input type = "hidden" name = "attempts" value = "&lt;?php echo $attempts = 0; ?&gt;"/&gt;
+
+    &lt;!-- to Send Value of PHP $_POST['userDefined']; to Another PHP File --&gt;
+    &lt;input type="text" name="userDefinedUserName" placeholder = "Enter Username" required value="&lt;?php
+        if(isset($_POST['userDefinedSubmit'])){
+            $_POST['userDefinedUserName'];
+        } ?&gt;"&gt;
+
+    &lt;input type="password" name="userDefinedPassword" placeholder = "Enter Password" required value="&lt;?php
+        if(isset($_POST['userDefinedSubmit'])){
+            $_POST['userDefinedPassword'];
+        } ?&gt;"&gt;
+
+    &lt;select name = "userDefinedName1" required value = "&lt;?php
+        if(isset($_POST['userDefinedSubmit'])){
+            $_POST['userDefinedName1'];
+        }
+    ?&gt;"&gt;
+        &lt;option&gt;&lt;/option&gt;
+        &lt;option&gt;Select Option 1&lt;/option&gt;
+        &lt;option&gt;Select Option 2&lt;/option&gt;
+    &lt;/select&gt;
+
+&lt;input type="submit" value="Submit" name = "userDefinedSubmit"&gt;
+&lt;/form&gt;
+
+&lt;a href = "transferPHPpage.php"&gt;Back&lt;/a&gt;
+
+&lt;button&gt;&lt;a href="authorized.php?cashierName=&lt;?php echo $cashierName; ?&gt;&transactNum=&lt;?php echo $transactNum; ?&gt;&stockId=&lt;?php echo $stockId; ?&gt;&purchaseItemId=&lt;?php echo $purchaseItemId; ?&gt;&beginBalance=&lt;?php echo $beginBalance; ?&gt;&notify"&gt; Remove &lt;/a&gt;&lt;/button&gt;
+</pre>
+</body>
+</html>
